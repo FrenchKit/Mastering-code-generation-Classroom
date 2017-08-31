@@ -1,0 +1,28 @@
+[
+ {
+   "firstName": "John",
+   "lastName": "Appleseed",
+   "address": {
+     "street": "1, Infinite Loop",
+     "city": "Cupertino",
+     "state": "California"
+   },
+   "phones": [
+      { "name": "My Precious", "model": "iPhone6s" },
+      { "name": "Test Phone", "model": "iPhone7Plus" }
+   ]
+ },
+ {
+   "firstName": "Tim",
+   "lastName": "Cook",
+   "address": {
+     "street": "1 Apple Park Way",
+     "city": "Cupertino",
+     "state": "California"
+   },
+   "phones": [
+      { "name": "My Phone", "model": "iPhone7" },
+      { "name": "Test Phone", "model": "iPhone7Plus" }
+   ]
+ }
+]
