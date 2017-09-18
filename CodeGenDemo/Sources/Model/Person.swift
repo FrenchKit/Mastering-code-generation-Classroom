@@ -19,9 +19,8 @@ struct Person {
 // FIXME: Sourcery (Custom template)
 extension Person {
   static let stringProperties: [String] = [
-    // FIXME: SwiftGen L10n
-    NSLocalizedString("Person.firstName", comment: ""),
-    NSLocalizedString("Person.lastName", comment: ""),
+    L10n.Person.firstName,
+    L10n.Person.lastName,
   ]
 
   subscript(propertyIndex idx: Int) -> String {

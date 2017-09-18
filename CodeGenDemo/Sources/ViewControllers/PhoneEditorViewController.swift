@@ -26,27 +26,20 @@ class PhoneEditorViewController: UIViewController {
     self.phoneModelPicker.selectRow(row, inComponent: 0, animated: false)
     self.phoneNameField.text = phone.name
 
-    self.phoneModelTitleLabel.text = "Pick a Phone Model" // FIXME: SwiftGen L10n
-    self.phoneModelTitleLabel.font = UIFont(name: "Avenir", size: 12) // FIXME: SwiftGen Fonts - FontFamily.…
-    self.phoneModelTitleLabel.textColor = UIColor.blue // FIXME: SwiftGen Colors - Color.…
+    self.phoneModelTitleLabel.text = L10n.Phoneeditor.Title.model
+    self.phoneModelTitleLabel.font = FontFamily.Avenir.medium.font(size: 12)
+    self.phoneModelTitleLabel.textColor = ColorName.sectionTitle.color
 
-    self.phoneNameLabel.text = "Phone Name" // FIXME: SwiftGen L10n
-    self.phoneNameLabel.font = UIFont(name: "Avenir", size: 12) // FIXME: SwiftGen Fonts - FontFamily.…
-    self.phoneNameLabel.textColor = UIColor.blue // FIXME: SwiftGen Colors - Color.…
+    self.phoneNameLabel.text = L10n.Phoneeditor.Title.name
+    self.phoneNameLabel.font = FontFamily.Avenir.medium.font(size: 12)
+    self.phoneNameLabel.textColor = ColorName.sectionTitle.color
 
-    self.randomButton.setTitle("Random", for: .normal) // FIXME: SwiftGen L10n
+    self.randomButton.setTitle(L10n.Phoneeditor.Random.button, for: .normal)
   }
 
   @IBAction func randomAction(_ sender: UIButton) {
     rollingImageViews.forEach { iv in
-      // FIXME: SwiftGen xcassets - Asset.…
-      iv.animationImages = [
-        UIImage(named: "Fruits/Exotic/Banana")!,
-        UIImage(named: "Fruits/Exotic/Mango")!,
-        UIImage(named: "Fruits/Round/Apple")!,
-        UIImage(named: "Fruits/Round/Apricot")!,
-        UIImage(named: "Fruits/Round/Double/Cherry")!,
-      ]
+      iv.animationImages = Asset.allImages.map { $0.image }
       iv.animationDuration = 0.05 + Double(arc4random_uniform(UInt32(20))) / 20.0
       iv.isHidden = false
       self.phoneNameField.isEnabled = false
@@ -54,11 +47,15 @@ class PhoneEditorViewController: UIViewController {
     }
 
     DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(2)) { [weak self] in
-      let proposals = ["My Phone", "My Awesome Phone", "iPhone", "Precious"] // FIXME: SwiftGen L10n
+      let proposals = [
+        L10n.Phoneeditor.Random.choice0,
+        L10n.Phoneeditor.Random.choice1,
+        L10n.Phoneeditor.Random.choice2,
+        L10n.Phoneeditor.Random.choice3,
+      ]
       let pIdx = Int(arc4random_uniform(UInt32(proposals.count)))
       let num = Int(arc4random_uniform(UInt32(200)))
-      let format = NSLocalizedString("PhoneEditor.random.format", comment: "") // FIXME: SwiftGen L10n format
-      self?.phone.name = String(format: format, proposals[pIdx], num) // FIXME: SwiftGen L10n format
+      self?.phone.name = L10n.Phoneeditor.Random.format(proposals[pIdx], num)
       self?.phoneNameField.text = self?.phone.name
       self?.rollingImageViews.forEach { iv in
         iv.stopAnimating()

@@ -59,15 +59,13 @@ class PersonListViewController: UITableViewController {
     if p.phones.count == 1, let phone = p.phones.first {
       cell.phoneModelLabel.text = phone.name
     } else {
-      let format = NSLocalizedString("PersonList.phones.count", comment: "") // FIXME: SwiftGen L10n
-      cell.phoneModelLabel.text = String(format: format, p.phones.count) // FIXME: SwiftGen L10n
+      cell.phoneModelLabel.text = L10n.Personlist.Phones.count(p.phones.count)
     }
     return cell
   }
 
   override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-    // FIXME: SwiftGen storyboards - StoryboardScene.PersonRecord
-    let vc = UIStoryboard(name: "PersonRecord", bundle: nil).instantiateInitialViewController() as! PersonRecordViewController
+    let vc = StoryboardScene.PersonRecord.initialScene.instantiate()
     vc.personRef = dataSource[indexPath.row]
     self.navigationController?.pushViewController(vc, animated: true)
   }
@@ -81,12 +79,9 @@ class PersonListViewController: UITableViewController {
     }
     // FIXME: Sourcery AutoEquatable+AutoHashable
     let set = allPhones // Set<Phone>(allPhones)
-    // FIXME: SwiftGen L10n
-    let format = NSLocalizedString("PersonList.dupes.mesage", comment: "") // here we have a bad hard-coded key!
-    let alert = UIAlertController(title: NSLocalizedString("PersonList.dupes.title", comment: ""),
-                                  message: String(format: format, set.count, allPhones.count), preferredStyle: .alert)
-    // here we have a bad hard-coded key too!
-    alert.addAction(UIAlertAction(title: NSLocalizedString("PersonList.dupes.ok", comment: ""), style: .default, handler: nil))
+    let alert = UIAlertController(title: L10n.Personlist.Dupes.title,
+                                  message: L10n.Personlist.Dupes.message(set.count, allPhones.count), preferredStyle: .alert)
+    alert.addAction(UIAlertAction(title: L10n.Personlist.Dupes.button, style: .default, handler: nil))
     self.present(alert, animated: true, completion: nil)
   }
 }

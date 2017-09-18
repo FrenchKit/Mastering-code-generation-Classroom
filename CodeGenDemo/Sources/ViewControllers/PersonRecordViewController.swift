@@ -25,7 +25,11 @@ class PersonRecordViewController: UITableViewController {
     }
   }
 
-  private static let sectionTitles = ["Person", "Address", "Phones"] // FIXME: SwiftGen L10n
+  private static let sectionTitles = [
+    L10n.Personrecord.Section.person,
+    L10n.Personrecord.Section.address,
+    L10n.Personrecord.Section.phones
+  ]
   override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
     return PersonRecordViewController.sectionTitles[section]
   }
@@ -61,8 +65,7 @@ class PersonRecordViewController: UITableViewController {
     case 1:
       prompt(person.address[propertyIndex: row]) { self.personRef.object.address[propertyIndex: row] = $0 }
     case 2:
-      // FIXME: SwiftGen storyboards - StoryboardScene.PersonRecord
-      let phoneEditor = UIStoryboard(name: "PersonRecord", bundle: nil).instantiateViewController(withIdentifier: "PhoneEditor") as! PhoneEditorViewController
+      let phoneEditor = StoryboardScene.PersonRecord.phoneEditor.instantiate()
       phoneEditor.phone = person.phones[row]
       phoneEditor.onDismiss = { [weak self] newPhone in
         self?.personRef.object.phones[row] = newPhone
@@ -76,11 +79,10 @@ class PersonRecordViewController: UITableViewController {
   // MARK: Prompt
 
   func prompt(_ initialValue: String, completion: @escaping (String) -> Void) {
-    // FIXME: SwiftGen L10n
-    let alert = UIAlertController(title: "New value", message: nil, preferredStyle: .alert)
+    let alert = UIAlertController(title: L10n.Personrecord.Edit.title, message: nil, preferredStyle: .alert)
     alert.addTextField { $0.text = initialValue }
-    alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
-    alert.addAction(UIAlertAction(title: "OK", style: .default) { [weak self] _ in
+    alert.addAction(UIAlertAction(title: L10n.Personrecord.Edit.cancel, style: .cancel, handler: nil))
+    alert.addAction(UIAlertAction(title: L10n.Personrecord.Edit.ok, style: .default) { [weak self] _ in
       guard let newText = alert.textFields?.first?.text else { return }
       completion(newText)
       self?.tableView.reloadData()

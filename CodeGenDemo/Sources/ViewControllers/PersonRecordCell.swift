@@ -13,13 +13,13 @@ class PersonRecordCell: UITableViewCell {
 
   @IBOutlet weak var titleLabel: UILabel! {
     didSet {
-      // titleLabel.font = … // FIXME: SwiftGen fonts - FontFamily.…
+       titleLabel.font = FontFamily.Avenir.lightOblique.font(size: 12)
     }
   }
 
   @IBOutlet weak var valueLabel: UILabel! {
     didSet {
-      // valueLabel.font = … // FIXME: SwiftGen fonts - FontFamily.…
+      valueLabel.font = FontFamily.Avenir.medium.font(size: 14)
     }
   }
 }

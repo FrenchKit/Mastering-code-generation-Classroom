@@ -19,10 +19,9 @@ struct Address {
 // FIXME: Sourcery (Custom template)
 extension Address {
   static let stringProperties: [String] = [
-    // FIXME: SwiftGen L10n
-    NSLocalizedString("Address.street", comment: ""),
-    NSLocalizedString("Address.city", comment: ""),
-    NSLocalizedString("Address.state", comment: ""),
+    L10n.Address.street,
+    L10n.Address.city,
+    L10n.Address.state,
   ]
   
   subscript(propertyIndex idx: Int) -> String {
