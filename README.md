@@ -1,14 +1,14 @@
 # Code Generation Classroom
 
-Learn to use SwiftGen, Sourcery & other CodeGen tools to improve your productivity and avoid having to type repetitive, boring code.
+Learn to use SwiftGen & Sourcery to avoid having to type repetitive, boring code and improve your productivity and your code's type safety & maintenance!
 
 ## Requirements
 
-This classroom expects that you already **know how to write Swift 3+ code** and have written a few (ideally iOS) applications.
+* This classroom expects that you already **know how to write Swift 3+ code** and have written a few (ideally iOS) applications.
+* We'll use Xcode 8.x, but Xcode 9.x should work too
 
-The required tools are:
+During the classroom, we'll learn how to install SwiftGen and Sourcery, but you are **encouraged to download the following ZIP files in advance** to have them around in your Download folders and avoid any download latency during the classroom:
 
-* Xcode 9.x (Xcode 8.x could work for the general principle too, but some examples are using Swift 3.2+'s KeyPaths)
 * SwiftGen 5.1.1 ([downloadable here](https://github.com/SwiftGen/SwiftGen/releases/latest))
 * Sourcery 0.8.0 ([downloadable here](https://github.com/krzysztofzablocki/Sourcery/releases/latest))
 
@@ -20,55 +20,48 @@ During the classroom, we'll use the following websites
 * [Sourcery dedicated documentation's website](https://cdn.rawgit.com/krzysztofzablocki/Sourcery/master/docs/index.html)
 * [Stencil documentation](http://stencil.fuller.li/en/latest/builtins.html)
 
-## Classroom steps
+## Walkthrough & Step-Commits
 
-### Discover the project
+The classroom will consist of multiple steps that we'll go through together
+
+* **All the individual steps that we're gonna follow are listed [in this repo's wiki](https://github.com/FrenchKit/Mastering-code-generation-Classroom/wiki)**.
+* Each step is represented by an individual commit in the `steps` branch of this repository.
+
+💡 Be sure to **keep that wiki open to follow along**.
+
+💡 In case you get lost or left behind, don't hesitate to look at the ![Step x.y](https://img.shields.io/badge/Step-x.y-blue.svg) markers in the wiki walkthrough and jump directly to the corresponding commit to catch up with the rest of the class!
+
+---
+
+## Topics Overview
+
+#### Discover the project
 
 * Clone this repository
-* The teacher will make a quick tour of the code, its problems, and what are the features the final app are supposed to contain
+* The teacher will make a quick tour of the code and app features
 
-### SwiftGen
+#### SwiftGen
 
-In this first part we'll:
-
-* Download & install SwiftGen
-  * Quick tour of the multiple installation procedures
-  * Running it in the terminal, looking at the output
-  * Setting it up as a Script Build Phase
+* Download, install & discover SwiftGen
 * Convert the existing code to use it
-  * Replace in the existing code every lines that could be made safer via SwiftGen (`// FIXME: SwiftGen`)
-  * Dequeue ViewControllers using Storyboads constants
-  * Translate the existing app using SwiftGen L10n constants
-  * Use image constants instead of literals
-* Improve the existing app
-  * Add colors to labels
-  * Add custom fonts
-* Quick-edit a template to customize the code
+* [Bonus] learn how to customize a template
 
-### Sourcery
+#### Sourcery
 
-In this second part we'll
+* Download, install & discover Sourcery
+* Try our first template to understand basic principles, discover the daemon mode
+* Discover & use the `AutoCases` template bundled with Sourcery
+* Try a third-party `AutoJSONDeserialization` template
+* Use `AutoEquatable` & `AutoHashable` templates
+* Create our own template for custom swift code
 
-* Download & install Sourcery
-  * Quick tour at the CLI
-  * Run it using a sample template (`AutoCases`), with a template folder, etc
-  * Create a `.sourcery.yml` for ease of setup
-* Convert existing code to use it
-  * `PhoneModel.allCases`
-  * JSON Parsing
-  * Use `AutoEquatable` & `AutoHashable` to find dupes
-* Create our own code
-  * Look at a sample template
-  * Create a dummy template
-  * Discover the daemon mode
-  * Create a template for the properties display on `Person` et al.
-    * `func property(at index: Int) -> (label: String, value: String)`
-* Use Sourcery for writing unit tests
-  * Look at the already written Unit Tests
-  * Copy one of the repetitive test, paste it in a stencil template, and use the daemon mode to adjust it and make it more generic
+#### Bonus : Gyro
 
-### Bonus : Gyro
+We won't probably have time to make a tour of [Gyro](https://github.com/NijiDigital/gyro), but if you're using Realm in your project, you'll likely be very interested in it.
 
-* Install gyro
-* Open an xcdatamodel from the repo
-* Run `gyro` on that xcdatamodel with one of the template (Swift, ObjC, Android) and look at the generated code
+It's again another Code-Generation tool, but this time to generate code (typically your `Realm.Object` classes) from `.xcdatamodel`, so that you can use Xcode's visual datamodel editor to edit your Realm model with a nice UI.
+
+* Install gyro using `gem install gyro`
+* Visit [Gyro's repository](https://github.com/NijiDigital/gyro) and read the README
+* Open one `xcdatamodel` from the repo (or create your own)
+* Run `gyro` on that xcdatamodel with one of the template (Swift, ObjC, Android) provided and look at the generated code
