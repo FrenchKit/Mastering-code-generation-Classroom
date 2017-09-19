@@ -3,30 +3,24 @@
 extension {{ type.name}} {
   static let stringProperties: [String] = [
     {% for prop in type.storedVariables where prop.typeName.name == "String" %}
-    -> {{ forloop.counter }}: {{ prop.name }}
+    L10n.{{ type.name }}.{{ prop.name }},
     {% endfor %}
-    L10n.Person.firstName,
-    L10n.Person.lastName,
   ]
 
   subscript(propertyIndex idx: Int) -> String {
     get {
-      switch idx {
+      switch idx+1 {
       {% for prop in type.storedVariables where prop.typeName.name == "String" %}
-      -> {{ forloop.counter }}: {{ prop.name }}
+      case {{ forloop.counter }}: return self.{{ prop.name }}
       {% endfor %}
-      case 0: return self.firstName
-      case 1: return self.lastName
       default: fatalError("Out of bounds")
       }
     }
     set {
-      switch idx {
+      switch idx+1 {
       {% for prop in type.storedVariables where prop.typeName.name == "String" %}
-      -> {{ forloop.counter }}: {{ prop.name }}
+      case {{ forloop.counter }}: self.{{ prop.name }} = newValue
       {% endfor %}
-      case 0: self.firstName = newValue
-      case 1: self.lastName = newValue
       default: fatalError("Out of bounds")
       }
     }
