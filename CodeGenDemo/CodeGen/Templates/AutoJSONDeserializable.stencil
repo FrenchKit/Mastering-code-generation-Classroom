@@ -1,0 +1,43 @@
+// swiftlint:disable cyclomatic_complexity file_length function_body_length line_length
+
+import Foundation
+{% ifnot argument.removePodImport %}
+import Sourcery_AutoJSONSerializable
+{% endif %}
+
+// MARK: - AutoJSONDeserializable for classes, protocols, structs
+{% for type in types.all|annotated:"AutoJSONDeserializable" %}
+
+// MARK: - {{ type.name }} AutoJSONDeserializable
+extension {{ type.name }}: JSONDeserializable {
+{% if type.supertype|annotated:"AutoJSONDeserializable" %} THIS WONT COMPILE, WE DONT SUPPORT INHERITANCE for AutoJSONDeserializable {% endif %}
+    {{ type.accessLevel }} init?(JSONObject: Any) {
+        guard let JSONObject = JSONObject as? [String: Any] else { return nil }
+        {% macro Optional arg %}guard {{ arg }} else { return nil }{% endmacro %}
+        {% for variable in type.storedVariables %}
+        {% ifnot variable.isArray %}
+        {% set castType %}{% if variable.type|annotated:"AutoJSONDeserializable" or variable.type.based.JSONDeserializable %}{% else %}{% if variable.type.kind == "enum" and variable.type.rawTypeName %}{{ variable.type.rawTypeName.name }}{% else %}{{ variable.unwrappedTypeName }}{% endif %}{% endif %}{% endset %}
+        {% set itemOperation %}{% if variable.type|annotated:"AutoJSONDeserializable" or variable.type.based.JSONDeserializable %}.flatMap({{ variable.unwrappedTypeName }}.init(JSONObject:)){%else%}{% if variable.type.kind == "enum" and variable.type.rawTypeName %}.flatMap({ {{ variable.actualTypeName.unwrappedTypeName }}(rawValue: $0) }){% endif %}{% endif %}{% endset %}
+        {% set Assignment %}let {{ variable.name }} = (JSONObject["{{ variable.annotations.JSONKey|default:variable.name }}"] {% if castType %}as? {% endif %}{{ castType }}){{ itemOperation }}{% endset %}
+        {% if variable.isOptional %}
+        {{ Assignment }}
+        {% else %}
+        {% call Optional Assignment %}
+        {% endif %}
+        {% else %}
+        {% set castType %}{% if variable.typeName.array.elementType|annotated:"AutoJSONDeserializable" or variable.typeName.array.elementType.based.JSONDeserializable %}[Any]{% else %}{% if variable.typeName.array.elementType.kind == "enum" and variable.typeName.array.elementType.rawTypeName %}[{{ variable.typeName.array.elementType.rawTypeName.name }}]{% else %}{{ variable.typeName }}{% endif %}{% endif %}{% endset %}
+        {% set itemOperation %}{% if variable.typeName.array.elementType|annotated:"AutoJSONDeserializable" or variable.typeName.array.elementType.based.JSONDeserializable %}?.flatMap({{ variable.typeName.array.elementTypeName.unwrappedTypeName }}.init(JSONObject:)){%else%}{% if variable.typeName.array.elementType.kind == "enum" and variable.typeName.array.elementType.rawTypeName %}?.flatMap({ {{ variable.typeName.array.elementTypeName.unwrappedTypeName }}(rawValue: $0) }){% endif %}{% endif %}{% endset %}
+        {% set Assignment %}let {{ variable.name }} = (JSONObject["{{ variable.annotations.JSONKey|default:variable.name }}"] as? {{ castType }}){{ itemOperation }}{% endset %}
+        {% if variable.isOptional %}
+        {{ Assignment }}
+        {% else %}
+        {% call Optional Assignment %}
+        {% endif %}
+        {% endif %}
+        self.{{ variable.name }} = {{ variable.name }}
+        {% endfor %}
+    }
+}
+{% endfor %}
+
+// MARK: -

@@ -8,3 +8,7 @@
 
 
 protocol AutoCases {}
+
+public protocol JSONDeserializable {
+  init?(JSONObject: Any)
+}
