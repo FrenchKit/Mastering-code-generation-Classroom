@@ -35,6 +35,7 @@
 		37E74B121F70465C004FC162 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E74B101F70465C004FC162 /* Fonts.swift */; };
 		37E74B251F71738D004FC162 /* stats.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E74B201F71738D004FC162 /* stats.generated.swift */; };
 		37E74B2A1F7177DE004FC162 /* SourceryProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E74B291F7177DE004FC162 /* SourceryProtocols.swift */; };
+		37E74B2C1F7179BB004FC162 /* AutoCases.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E74B2B1F7179BB004FC162 /* AutoCases.generated.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +84,7 @@
 		37E74B101F70465C004FC162 /* Fonts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
 		37E74B201F71738D004FC162 /* stats.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = stats.generated.swift; sourceTree = "<group>"; };
 		37E74B291F7177DE004FC162 /* SourceryProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SourceryProtocols.swift; sourceTree = "<group>"; };
+		37E74B2B1F7179BB004FC162 /* AutoCases.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoCases.generated.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -226,6 +228,7 @@
 		37E74B1E1F71738D004FC162 /* Generated */ = {
 			isa = PBXGroup;
 			children = (
+				37E74B2B1F7179BB004FC162 /* AutoCases.generated.swift */,
 				37E74B201F71738D004FC162 /* stats.generated.swift */,
 			);
 			path = Generated;
@@ -383,6 +386,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				37E74B121F70465C004FC162 /* Fonts.swift in Sources */,
+				37E74B2C1F7179BB004FC162 /* AutoCases.generated.swift in Sources */,
 				37E74B2A1F7177DE004FC162 /* SourceryProtocols.swift in Sources */,
 				370CDAA81F586051000C7FD1 /* Phone.swift in Sources */,
 				37E74B111F70465C004FC162 /* Colors.swift in Sources */,

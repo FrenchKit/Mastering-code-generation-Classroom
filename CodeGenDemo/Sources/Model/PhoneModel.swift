@@ -16,16 +16,3 @@ enum PhoneModel: String, AutoCases {
   case iPhone7, iPhone7Plus
   // case iPhone8, iPhone8Plus, iPhoneX
 }
-
-// FIXME: Sourcery: AutoCases
-extension PhoneModel {
-  static let allCases: [PhoneModel] = [
-    .iPhone, .iPhone3G, .iPhone3GS,
-    .iPhone4, .iPhone4s,
-    .iPhone5, .iPhone5c, .iPhone5s,
-    .iPhoneSE,
-    .iPhone6, .iPhone6Plus,
-    .iPhone6s, .iPhone6sPlus,
-    .iPhone7, .iPhone7Plus,
-  ]
-}
