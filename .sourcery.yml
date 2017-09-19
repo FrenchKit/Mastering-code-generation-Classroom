@@ -3,3 +3,5 @@ sources:
 templates:
   - CodeGenDemo/CodeGen/Templates
 output: CodeGenDemo/CodeGen/Generated
+args:
+  removePodImport: true

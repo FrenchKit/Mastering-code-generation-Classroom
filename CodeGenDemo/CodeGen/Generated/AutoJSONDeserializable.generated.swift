@@ -4,7 +4,6 @@
 // swiftlint:disable cyclomatic_complexity file_length function_body_length line_length
 
 import Foundation
-import Sourcery_AutoJSONSerializable
 
 // MARK: - AutoJSONDeserializable for classes, protocols, structs
 
