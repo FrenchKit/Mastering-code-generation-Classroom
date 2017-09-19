@@ -37,6 +37,8 @@
 		37E74B2A1F7177DE004FC162 /* SourceryProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E74B291F7177DE004FC162 /* SourceryProtocols.swift */; };
 		37E74B2C1F7179BB004FC162 /* AutoCases.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E74B2B1F7179BB004FC162 /* AutoCases.generated.swift */; };
 		37E74B2E1F718480004FC162 /* AutoJSONDeserializable.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E74B2D1F718480004FC162 /* AutoJSONDeserializable.generated.swift */; };
+		37E74B311F718F4F004FC162 /* AutoEquatable.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E74B2F1F718F4F004FC162 /* AutoEquatable.generated.swift */; };
+		37E74B321F718F4F004FC162 /* AutoHashable.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E74B301F718F4F004FC162 /* AutoHashable.generated.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,6 +89,8 @@
 		37E74B291F7177DE004FC162 /* SourceryProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SourceryProtocols.swift; sourceTree = "<group>"; };
 		37E74B2B1F7179BB004FC162 /* AutoCases.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoCases.generated.swift; sourceTree = "<group>"; };
 		37E74B2D1F718480004FC162 /* AutoJSONDeserializable.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoJSONDeserializable.generated.swift; sourceTree = "<group>"; };
+		37E74B2F1F718F4F004FC162 /* AutoEquatable.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoEquatable.generated.swift; sourceTree = "<group>"; };
+		37E74B301F718F4F004FC162 /* AutoHashable.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoHashable.generated.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -230,6 +234,8 @@
 		37E74B1E1F71738D004FC162 /* Generated */ = {
 			isa = PBXGroup;
 			children = (
+				37E74B2F1F718F4F004FC162 /* AutoEquatable.generated.swift */,
+				37E74B301F718F4F004FC162 /* AutoHashable.generated.swift */,
 				37E74B2D1F718480004FC162 /* AutoJSONDeserializable.generated.swift */,
 				37E74B2B1F7179BB004FC162 /* AutoCases.generated.swift */,
 				37E74B201F71738D004FC162 /* stats.generated.swift */,
@@ -400,6 +406,7 @@
 				37E74B2E1F718480004FC162 /* AutoJSONDeserializable.generated.swift in Sources */,
 				37E74B251F71738D004FC162 /* stats.generated.swift in Sources */,
 				370CDA801F585A4A000C7FD1 /* AppDelegate.swift in Sources */,
+				37E74B311F718F4F004FC162 /* AutoEquatable.generated.swift in Sources */,
 				37E74B0E1F704505004FC162 /* Storyboards.swift in Sources */,
 				09A80B991F6EE1BF00FAF99B /* PersonRecordCell.swift in Sources */,
 				370CDA961F585A91000C7FD1 /* PhoneModel.swift in Sources */,
@@ -408,6 +415,7 @@
 				09A80B971F6EDFD800FAF99B /* PersonRecordViewController.swift in Sources */,
 				37E74B091F701B34004FC162 /* Strings.swift in Sources */,
 				370CDAA31F585EC4000C7FD1 /* Person.swift in Sources */,
+				37E74B321F718F4F004FC162 /* AutoHashable.generated.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
