@@ -8,6 +8,8 @@
 
 
 protocol AutoCases {}
+protocol AutoEquatable {}
+protocol AutoHashable {}
 
 public protocol JSONDeserializable {
   init?(JSONObject: Any)
