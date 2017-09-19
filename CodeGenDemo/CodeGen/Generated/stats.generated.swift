@@ -7,7 +7,7 @@ This project contains:
 - 27 enums
 - 9 structs
 - 8 classes
-- 2 protocols
+- 3 protocols
 
 Here are the classes found:
 

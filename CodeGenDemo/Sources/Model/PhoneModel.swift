@@ -6,7 +6,7 @@
 //  Copyright © 2017 AliSoftware. All rights reserved.
 //
 
-enum PhoneModel: String {
+enum PhoneModel: String, AutoCases {
   case iPhone, iPhone3G, iPhone3GS
   case iPhone4, iPhone4s
   case iPhone5, iPhone5c, iPhone5s

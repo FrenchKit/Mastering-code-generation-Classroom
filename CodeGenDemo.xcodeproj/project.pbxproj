@@ -34,6 +34,7 @@
 		37E74B111F70465C004FC162 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E74B0F1F70465C004FC162 /* Colors.swift */; };
 		37E74B121F70465C004FC162 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E74B101F70465C004FC162 /* Fonts.swift */; };
 		37E74B251F71738D004FC162 /* stats.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E74B201F71738D004FC162 /* stats.generated.swift */; };
+		37E74B2A1F7177DE004FC162 /* SourceryProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E74B291F7177DE004FC162 /* SourceryProtocols.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +82,7 @@
 		37E74B0F1F70465C004FC162 /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		37E74B101F70465C004FC162 /* Fonts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
 		37E74B201F71738D004FC162 /* stats.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = stats.generated.swift; sourceTree = "<group>"; };
+		37E74B291F7177DE004FC162 /* SourceryProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SourceryProtocols.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -173,6 +175,7 @@
 		370CDA911F585A54000C7FD1 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				37E74B291F7177DE004FC162 /* SourceryProtocols.swift */,
 				370CDA941F585A7F000C7FD1 /* Model */,
 				370CDAAF1F58625B000C7FD1 /* ViewControllers */,
 			);
@@ -380,6 +383,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				37E74B121F70465C004FC162 /* Fonts.swift in Sources */,
+				37E74B2A1F7177DE004FC162 /* SourceryProtocols.swift in Sources */,
 				370CDAA81F586051000C7FD1 /* Phone.swift in Sources */,
 				37E74B111F70465C004FC162 /* Colors.swift in Sources */,
 				09A80B911F6EDABD00FAF99B /* PersonListCell.swift in Sources */,
