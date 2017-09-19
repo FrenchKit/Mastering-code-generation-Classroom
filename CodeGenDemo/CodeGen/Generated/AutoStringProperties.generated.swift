@@ -3,14 +3,12 @@
 
 
  - Address
-   -> street
-   -> city
-   -> state
+   -> 1: street
+   -> 2: city
+   -> 3: state
  - Person
-   -> firstName
-   -> lastName
-   -> address
-   -> phones
+   -> 1: firstName
+   -> 2: lastName
 
 extension Person {
   static let stringProperties: [String] = [

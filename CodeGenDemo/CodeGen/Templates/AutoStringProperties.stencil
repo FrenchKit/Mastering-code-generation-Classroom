@@ -1,7 +1,7 @@
 {% for type in types.implementing.AutoStringProperties %}
  - {{ type.name}}
-  {% for prop in type.storedVariables %}
-   -> {{ prop.name }}
+  {% for prop in type.storedVariables where prop.typeName.name == "String" %}
+   -> {{ forloop.counter }}: {{ prop.name }}
   {% endfor %}
 {% endfor %}
 
