@@ -16,26 +16,17 @@ class PersonListViewController: UITableViewController {
 
   override func viewDidLoad() {
     super.viewDidLoad()
-    // Do any additional setup after loading the view, typically from a nib.
 
-    // FIXME: Sourcery AutoJSONDeserializable
-    let p1 = Person(
-      firstName: "John",
-      lastName: "Appleseed",
-      address: Address(street: "1, Infinite Loop", city: "Cupertino", state: "California"),
-      phones: [Phone(model: .iPhone7, name: "My Phone")]
-    )
-    let p2 = Person(
-      firstName: "Tim",
-      lastName: "Cook",
-      address: Address(street: "1, Apple Park", city: "Cupertino", state: "California"),
-      phones: [
-        Phone(model: .iPhone7Plus, name: "My Precious"),
-        Phone(model: .iPhone5s, name: "Oldie")
-      ]
-    )
-
-    dataSource = [p1, p2].map { Ref(object: $0) }
+    do {
+      let data = try Data(contentsOf: Bundle.main.url(forResource: "data", withExtension: "json")!)
+      let json = try JSONSerialization.jsonObject(with: data, options: []) as! [Any]
+      dataSource = json.map({ personJSON in
+        let p = Person(JSONObject: personJSON)!
+        return Ref(object: p)
+      })
+    } catch let e {
+      print("Error: ", e)
+    }
 
     let dupes = UIBarButtonItem(barButtonSystemItem: .action, target: self, action: #selector(findDupes))
     self.navigationItem.rightBarButtonItem = dupes
