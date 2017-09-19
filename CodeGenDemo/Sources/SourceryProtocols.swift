@@ -10,6 +10,7 @@
 protocol AutoCases {}
 protocol AutoEquatable {}
 protocol AutoHashable {}
+protocol AutoStringProperties {}
 
 public protocol JSONDeserializable {
   init?(JSONObject: Any)

@@ -9,7 +9,7 @@
 import Foundation
 
 // sourcery: AutoJSONDeserializable
-struct Address {
+struct Address: AutoStringProperties {
   var street: String
   var city: String
   var state: String

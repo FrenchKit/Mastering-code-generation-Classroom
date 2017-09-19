@@ -9,7 +9,7 @@
 import Foundation
 
 // sourcery: AutoJSONDeserializable
-struct Person {
+struct Person: AutoStringProperties {
   var firstName: String
   var lastName: String
   var address: Address
