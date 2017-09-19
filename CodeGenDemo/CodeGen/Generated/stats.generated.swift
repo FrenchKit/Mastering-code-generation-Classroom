@@ -8,4 +8,15 @@ This project contains:
 - 9 structs
 - 8 classes
 - 2 protocols
+
+Here are the classes found:
+
+ - AppDelegate
+ - BundleToken
+ - PersonListCell
+ - PersonListViewController
+ - PersonRecordCell
+ - PersonRecordViewController
+ - PhoneEditorViewController
+ - Ref
 */
