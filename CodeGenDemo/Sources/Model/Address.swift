@@ -8,7 +8,7 @@
 
 import Foundation
 
-// FIXME: sourcery: AutoJSONDeserializable
+// sourcery: AutoJSONDeserializable
 struct Address {
   var street: String
   var city: String

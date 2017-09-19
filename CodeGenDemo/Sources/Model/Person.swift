@@ -8,7 +8,7 @@
 
 import Foundation
 
-// FIXME: sourcery: AutoJSONDeserializable
+// sourcery: AutoJSONDeserializable
 struct Person {
   var firstName: String
   var lastName: String
