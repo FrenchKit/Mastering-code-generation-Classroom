@@ -3,7 +3,7 @@
 
 
 extension PhoneModel {
-  static let count: Int = 15
+  static let count: Int = 18
   static let allCases: [PhoneModel] = [
     .iPhone,
     .iPhone3G,
@@ -19,6 +19,9 @@ extension PhoneModel {
     .iPhone6s,
     .iPhone6sPlus,
     .iPhone7,
-    .iPhone7Plus
+    .iPhone7Plus,
+    .iPhone8,
+    .iPhone8Plus,
+    .iPhoneX
   ]
 }

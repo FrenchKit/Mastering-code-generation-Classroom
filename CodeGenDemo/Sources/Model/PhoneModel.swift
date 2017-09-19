@@ -14,5 +14,5 @@ enum PhoneModel: String, AutoCases {
   case iPhone6, iPhone6Plus
   case iPhone6s, iPhone6sPlus
   case iPhone7, iPhone7Plus
-  // case iPhone8, iPhone8Plus, iPhoneX
+  case iPhone8, iPhone8Plus, iPhoneX
 }
