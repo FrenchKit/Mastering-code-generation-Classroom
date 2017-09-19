@@ -39,6 +39,7 @@
 		37E74B2E1F718480004FC162 /* AutoJSONDeserializable.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E74B2D1F718480004FC162 /* AutoJSONDeserializable.generated.swift */; };
 		37E74B311F718F4F004FC162 /* AutoEquatable.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E74B2F1F718F4F004FC162 /* AutoEquatable.generated.swift */; };
 		37E74B321F718F4F004FC162 /* AutoHashable.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E74B301F718F4F004FC162 /* AutoHashable.generated.swift */; };
+		37E74B341F719DC8004FC162 /* AutoStringProperties.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E74B331F719DC8004FC162 /* AutoStringProperties.generated.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -91,6 +92,7 @@
 		37E74B2D1F718480004FC162 /* AutoJSONDeserializable.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoJSONDeserializable.generated.swift; sourceTree = "<group>"; };
 		37E74B2F1F718F4F004FC162 /* AutoEquatable.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoEquatable.generated.swift; sourceTree = "<group>"; };
 		37E74B301F718F4F004FC162 /* AutoHashable.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoHashable.generated.swift; sourceTree = "<group>"; };
+		37E74B331F719DC8004FC162 /* AutoStringProperties.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoStringProperties.generated.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -234,6 +236,7 @@
 		37E74B1E1F71738D004FC162 /* Generated */ = {
 			isa = PBXGroup;
 			children = (
+				37E74B331F719DC8004FC162 /* AutoStringProperties.generated.swift */,
 				37E74B2F1F718F4F004FC162 /* AutoEquatable.generated.swift */,
 				37E74B301F718F4F004FC162 /* AutoHashable.generated.swift */,
 				37E74B2D1F718480004FC162 /* AutoJSONDeserializable.generated.swift */,
@@ -411,6 +414,7 @@
 				09A80B991F6EE1BF00FAF99B /* PersonRecordCell.swift in Sources */,
 				370CDA961F585A91000C7FD1 /* PhoneModel.swift in Sources */,
 				37E74B0D1F704505004FC162 /* Assets.swift in Sources */,
+				37E74B341F719DC8004FC162 /* AutoStringProperties.generated.swift in Sources */,
 				092C6D0B1F6EF31400856FE3 /* Ref.swift in Sources */,
 				09A80B971F6EDFD800FAF99B /* PersonRecordViewController.swift in Sources */,
 				37E74B091F701B34004FC162 /* Strings.swift in Sources */,
