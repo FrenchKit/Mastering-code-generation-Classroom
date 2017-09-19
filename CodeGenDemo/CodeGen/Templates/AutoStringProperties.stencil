@@ -1,5 +1,8 @@
 {% for type in types.implementing.AutoStringProperties %}
  - {{ type.name}}
+  {% for prop in type.storedVariables %}
+   -> {{ prop.name }}
+  {% endfor %}
 {% endfor %}
 
 extension Person {
