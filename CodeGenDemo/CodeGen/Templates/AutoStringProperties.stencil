@@ -1,12 +1,10 @@
 {% for type in types.implementing.AutoStringProperties %}
- - {{ type.name}}
-  {% for prop in type.storedVariables where prop.typeName.name == "String" %}
-   -> {{ forloop.counter }}: {{ prop.name }}
-  {% endfor %}
-{% endfor %}
 
-extension Person {
+extension {{ type.name}} {
   static let stringProperties: [String] = [
+    {% for prop in type.storedVariables where prop.typeName.name == "String" %}
+    -> {{ forloop.counter }}: {{ prop.name }}
+    {% endfor %}
     L10n.Person.firstName,
     L10n.Person.lastName,
   ]
@@ -14,6 +12,9 @@ extension Person {
   subscript(propertyIndex idx: Int) -> String {
     get {
       switch idx {
+      {% for prop in type.storedVariables where prop.typeName.name == "String" %}
+      -> {{ forloop.counter }}: {{ prop.name }}
+      {% endfor %}
       case 0: return self.firstName
       case 1: return self.lastName
       default: fatalError("Out of bounds")
@@ -21,6 +22,9 @@ extension Person {
     }
     set {
       switch idx {
+      {% for prop in type.storedVariables where prop.typeName.name == "String" %}
+      -> {{ forloop.counter }}: {{ prop.name }}
+      {% endfor %}
       case 0: self.firstName = newValue
       case 1: self.lastName = newValue
       default: fatalError("Out of bounds")
@@ -28,3 +32,4 @@ extension Person {
     }
   }
 }
+{% endfor %}
