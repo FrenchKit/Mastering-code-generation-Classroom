@@ -1,0 +1,5 @@
+sources:
+  - CodeGenDemo
+templates:
+  - CodeGenDemo/CodeGen/Templates
+output: CodeGenDemo/CodeGen/Generated
