@@ -1,6 +1,10 @@
 // Generated using Sourcery 0.8.0 — https://github.com/krzysztofzablocki/Sourcery
 // DO NOT EDIT
 
+
+ - Address
+ - Person
+
 extension Person {
   static let stringProperties: [String] = [
     L10n.Person.firstName,

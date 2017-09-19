@@ -1,3 +1,7 @@
+{% for type in types.implementing.AutoStringProperties %}
+ - {{ type.name}}
+{% endfor %}
+
 extension Person {
   static let stringProperties: [String] = [
     L10n.Person.firstName,
