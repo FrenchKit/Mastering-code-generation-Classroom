@@ -9,7 +9,7 @@
 import Foundation
 
 // sourcery: AutoJSONDeserializable
-struct Phone {
+struct Phone: AutoEquatable, AutoHashable {
   var model: PhoneModel
   var name: String
 }

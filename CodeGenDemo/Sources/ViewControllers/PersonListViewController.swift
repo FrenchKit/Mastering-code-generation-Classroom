@@ -68,8 +68,7 @@ class PersonListViewController: UITableViewController {
     let allPhones: [Phone] = self.dataSource.reduce([]) { (acc, personRef) -> [Phone] in
       return acc + personRef.object.phones
     }
-    // FIXME: Sourcery AutoEquatable+AutoHashable
-    let set = allPhones // Set<Phone>(allPhones)
+    let set = Set<Phone>(allPhones)
     let alert = UIAlertController(title: L10n.Personlist.Dupes.title,
                                   message: L10n.Personlist.Dupes.message(set.count, allPhones.count), preferredStyle: .alert)
     alert.addAction(UIAlertAction(title: L10n.Personlist.Dupes.button, style: .default, handler: nil))
