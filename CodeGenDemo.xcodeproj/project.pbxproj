@@ -33,6 +33,7 @@
 		37E74B0E1F704505004FC162 /* Storyboards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E74B0C1F704505004FC162 /* Storyboards.swift */; };
 		37E74B111F70465C004FC162 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E74B0F1F70465C004FC162 /* Colors.swift */; };
 		37E74B121F70465C004FC162 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E74B101F70465C004FC162 /* Fonts.swift */; };
+		37E74B251F71738D004FC162 /* stats.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E74B201F71738D004FC162 /* stats.generated.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +80,7 @@
 		37E74B0C1F704505004FC162 /* Storyboards.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Storyboards.swift; sourceTree = "<group>"; };
 		37E74B0F1F70465C004FC162 /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		37E74B101F70465C004FC162 /* Fonts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
+		37E74B201F71738D004FC162 /* stats.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = stats.generated.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +124,7 @@
 			isa = PBXGroup;
 			children = (
 				09A80B931F6EDDF900FAF99B /* Constants */,
+				37E74B1E1F71738D004FC162 /* Generated */,
 			);
 			path = CodeGen;
 			sourceTree = "<group>";
@@ -217,6 +220,14 @@
 			path = ViewControllers;
 			sourceTree = "<group>";
 		};
+		37E74B1E1F71738D004FC162 /* Generated */ = {
+			isa = PBXGroup;
+			children = (
+				37E74B201F71738D004FC162 /* stats.generated.swift */,
+			);
+			path = Generated;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -243,6 +254,7 @@
 			buildConfigurationList = 370CDA8E1F585A4A000C7FD1 /* Build configuration list for PBXNativeTarget "CodeGenDemo" */;
 			buildPhases = (
 				37E74B071F70146D004FC162 /* 🛠 SwiftGen */,
+				37E74B131F7172EE004FC162 /* 🛠 Sourcery */,
 				370CDA781F585A4A000C7FD1 /* Sources */,
 				370CDA791F585A4A000C7FD1 /* Frameworks */,
 				370CDA7A1F585A4A000C7FD1 /* Resources */,
@@ -338,6 +350,20 @@
 			shellPath = /bin/sh;
 			shellScript = ./swiftgen.sh;
 		};
+		37E74B131F7172EE004FC162 /* 🛠 Sourcery */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "🛠 Sourcery";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./sourcery-0.8.0/bin/sourcery";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -360,6 +386,7 @@
 				370CDAA51F585EF0000C7FD1 /* Address.swift in Sources */,
 				092C6D091F6EEB5200856FE3 /* PhoneEditorViewController.swift in Sources */,
 				370CDA821F585A4A000C7FD1 /* PersonListViewController.swift in Sources */,
+				37E74B251F71738D004FC162 /* stats.generated.swift in Sources */,
 				370CDA801F585A4A000C7FD1 /* AppDelegate.swift in Sources */,
 				37E74B0E1F704505004FC162 /* Storyboards.swift in Sources */,
 				09A80B991F6EE1BF00FAF99B /* PersonRecordCell.swift in Sources */,
