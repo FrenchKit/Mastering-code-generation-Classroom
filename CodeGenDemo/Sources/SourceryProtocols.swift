@@ -15,3 +15,7 @@ protocol AutoStringProperties {}
 public protocol JSONDeserializable {
   init?(JSONObject: Any)
 }
+
+extension PhoneModel: AutoCases {}
+extension Person: AutoStringProperties {}
+extension Address: AutoStringProperties {}

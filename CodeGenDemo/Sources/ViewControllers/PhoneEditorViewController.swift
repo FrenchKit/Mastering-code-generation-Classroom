@@ -22,7 +22,7 @@ class PhoneEditorViewController: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
 
-    let row = PhoneModel.allCases.index(of: phone.model) ?? 0
+    let row = phone.modelEnum.flatMap({ PhoneModel.allCases.index(of: $0) }) ?? 0
     self.phoneModelPicker.selectRow(row, inComponent: 0, animated: false)
     self.phoneNameField.text = phone.name
 
@@ -85,7 +85,7 @@ extension PhoneEditorViewController: UIPickerViewDataSource, UIPickerViewDelegat
   }
 
   func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-    phone.model = PhoneModel.allCases[row]
+    phone.modelEnum = PhoneModel.allCases[row]
   }
 }
 

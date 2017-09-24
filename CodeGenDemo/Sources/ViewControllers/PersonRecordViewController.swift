@@ -9,8 +9,7 @@
 import UIKit
 
 class PersonRecordViewController: UITableViewController {
-  var personRef: Ref<Person>!
-  var person: Person { return personRef.object }
+  var person: Person!
 
   override func numberOfSections(in tableView: UITableView) -> Int {
     return 3
@@ -44,10 +43,10 @@ class PersonRecordViewController: UITableViewController {
       cell.valueLabel.text = person[propertyIndex: row]
     case 1:
       cell.titleLabel.text = Address.stringProperties[row]
-      cell.valueLabel.text = person.address[propertyIndex: row]
+      cell.valueLabel.text = person.address?[propertyIndex: row]
     case 2:
       cell.titleLabel.text = person.phones[row].name
-      cell.valueLabel.text = person.phones[row].model.rawValue
+      cell.valueLabel.text = person.phones[row].modelEnum?.rawValue
     default:
       fatalError("Unreachable IndexPath")
     }
@@ -61,14 +60,14 @@ class PersonRecordViewController: UITableViewController {
 
     switch indexPath.section {
     case 0:
-      prompt(person[propertyIndex: row]) { self.personRef.object[propertyIndex: row] = $0 }
+      prompt(person[propertyIndex: row]) { self.person[propertyIndex: row] = $0 }
     case 1:
-      prompt(person.address[propertyIndex: row]) { self.personRef.object.address[propertyIndex: row] = $0 }
+      prompt(person.address?[propertyIndex: row] ?? "") { self.person.address?[propertyIndex: row] = $0 }
     case 2:
       let phoneEditor = StoryboardScene.PersonRecord.phoneEditor.instantiate()
       phoneEditor.phone = person.phones[row]
       phoneEditor.onDismiss = { [weak self] newPhone in
-        self?.personRef.object.phones[row] = newPhone
+        self?.person.phones[row] = newPhone
         self?.tableView.reloadData()
       }
       self.navigationController?.pushViewController(phoneEditor, animated: true)

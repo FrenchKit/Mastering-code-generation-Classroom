@@ -10,7 +10,7 @@ import UIKit
 
 class PersonListViewController: UITableViewController {
 
-  private var dataSource: [Ref<Person>] = [] {
+  private var dataSource: [Person] = [] {
     didSet { tableView.reloadData() }
   }
 
@@ -21,8 +21,7 @@ class PersonListViewController: UITableViewController {
       let data = try Data(contentsOf: Bundle.main.url(forResource: "data", withExtension: "json")!)
       let json = try JSONSerialization.jsonObject(with: data, options: []) as! [Any]
       dataSource = json.map({ personJSON in
-        let p = Person(JSONObject: personJSON)!
-        return Ref(object: p)
+        return Person(value: personJSON)
       })
     } catch let e {
       print("Error: ", e)
@@ -45,7 +44,7 @@ class PersonListViewController: UITableViewController {
 
   override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
     let cell = tableView.dequeueReusableCell(withIdentifier: PersonListCell.identifier) as! PersonListCell
-    let p = dataSource[indexPath.row].object
+    let p = dataSource[indexPath.row]
     cell.nameLabel.text = "\(p.firstName) \(p.lastName)"
     if p.phones.count == 1, let phone = p.phones.first {
       cell.phoneModelLabel.text = phone.name
@@ -57,7 +56,7 @@ class PersonListViewController: UITableViewController {
 
   override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
     let vc = StoryboardScene.PersonRecord.initialScene.instantiate()
-    vc.personRef = dataSource[indexPath.row]
+    vc.person = dataSource[indexPath.row]
     self.navigationController?.pushViewController(vc, animated: true)
   }
 
@@ -65,8 +64,8 @@ class PersonListViewController: UITableViewController {
 
   @objc
   func findDupes() {
-    let allPhones: [Phone] = self.dataSource.reduce([]) { (acc, personRef) -> [Phone] in
-      return acc + personRef.object.phones
+    let allPhones: [Phone] = self.dataSource.reduce([]) { (acc, person) -> [Phone] in
+      return acc + person.phones
     }
     let set = Set<Phone>(allPhones)
     let alert = UIAlertController(title: L10n.Personlist.Dupes.title,
