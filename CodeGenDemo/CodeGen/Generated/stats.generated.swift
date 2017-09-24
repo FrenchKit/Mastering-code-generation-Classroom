@@ -4,19 +4,21 @@
 /*
 This project contains:
 
-- 27 enums
-- 9 structs
-- 8 classes
+- 31 enums
+- 6 structs
+- 10 classes
 - 7 protocols
 
 Here are the classes found:
 
+ - Address
  - AppDelegate
  - BundleToken
+ - Person
  - PersonListCell
  - PersonListViewController
  - PersonRecordCell
  - PersonRecordViewController
+ - Phone
  - PhoneEditorViewController
- - Ref
 */

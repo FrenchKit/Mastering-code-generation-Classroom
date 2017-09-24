@@ -10,8 +10,8 @@ final class Address: Object {
     case street = "street"
   }
 
-  dynamic var city: String?
-  dynamic var state: String?
-  dynamic var street: String?
+  dynamic var city: String = ""
+  dynamic var state: String = ""
+  dynamic var street: String = ""
 
 }

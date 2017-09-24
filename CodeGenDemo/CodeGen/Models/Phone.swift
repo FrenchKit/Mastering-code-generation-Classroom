@@ -10,17 +10,15 @@ final class Phone: Object {
   }
 
 
-  dynamic var model: String?
+  dynamic var model: String = ""
   var modelEnum: PhoneModel? {
     get {
-      guard let model = model,
-        let enumValue = PhoneModel(rawValue: model)
-        else { return nil }
+      guard let enumValue = PhoneModel(rawValue: model) else { return nil }
       return enumValue
     }
-    set { model = newValue?.rawValue ?? nil }
+    set { model = newValue?.rawValue ?? "" }
   }
 
-  dynamic var name: String?
+  dynamic var name: String = ""
 
 }

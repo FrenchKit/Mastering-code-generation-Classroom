@@ -10,7 +10,6 @@
 		09031FA01F6ECA7600FBAB7A /* CodeGenDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09031F9F1F6ECA7600FBAB7A /* CodeGenDemoTests.swift */; };
 		09031FA91F6ECBC700FBAB7A /* Phone1.json in Resources */ = {isa = PBXBuildFile; fileRef = 09031FA81F6ECBC700FBAB7A /* Phone1.json */; };
 		092C6D091F6EEB5200856FE3 /* PhoneEditorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092C6D081F6EEB5200856FE3 /* PhoneEditorViewController.swift */; };
-		092C6D0B1F6EF31400856FE3 /* Ref.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092C6D0A1F6EF31400856FE3 /* Ref.swift */; };
 		092C6D101F6F31FB00856FE3 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 092C6D0E1F6F31FB00856FE3 /* Localizable.strings */; };
 		092C6D131F6F365700856FE3 /* Avenir.ttc in Resources */ = {isa = PBXBuildFile; fileRef = 092C6D121F6F365600856FE3 /* Avenir.ttc */; };
 		09A80B8D1F6ED3D400FAF99B /* Phone2.json in Resources */ = {isa = PBXBuildFile; fileRef = 09A80B8C1F6ED3D400FAF99B /* Phone2.json */; };
@@ -24,10 +23,14 @@
 		370CDA851F585A4A000C7FD1 /* PersonList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 370CDA831F585A4A000C7FD1 /* PersonList.storyboard */; };
 		370CDA871F585A4A000C7FD1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 370CDA861F585A4A000C7FD1 /* Assets.xcassets */; };
 		370CDA8A1F585A4A000C7FD1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 370CDA881F585A4A000C7FD1 /* LaunchScreen.storyboard */; };
-		370CDA961F585A91000C7FD1 /* PhoneModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 370CDA951F585A91000C7FD1 /* PhoneModel.swift */; };
-		370CDAA31F585EC4000C7FD1 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 370CDAA21F585EC4000C7FD1 /* Person.swift */; };
-		370CDAA51F585EF0000C7FD1 /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = 370CDAA41F585EF0000C7FD1 /* Address.swift */; };
-		370CDAA81F586051000C7FD1 /* Phone.swift in Sources */ = {isa = PBXBuildFile; fileRef = 370CDAA71F586051000C7FD1 /* Phone.swift */; };
+		3787B2F71F77D37C00DD85F1 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3787B2F51F77D37C00DD85F1 /* Realm.framework */; };
+		3787B2F81F77D37C00DD85F1 /* Realm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3787B2F51F77D37C00DD85F1 /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3787B2F91F77D37C00DD85F1 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3787B2F61F77D37C00DD85F1 /* RealmSwift.framework */; };
+		3787B2FA1F77D37C00DD85F1 /* RealmSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3787B2F61F77D37C00DD85F1 /* RealmSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3787B3021F77D4B900DD85F1 /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3787B2FE1F77D4B900DD85F1 /* Address.swift */; };
+		3787B3031F77D4B900DD85F1 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3787B2FF1F77D4B900DD85F1 /* Person.swift */; };
+		3787B3041F77D4B900DD85F1 /* Phone.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3787B3001F77D4B900DD85F1 /* Phone.swift */; };
+		3787B3051F77D4B900DD85F1 /* PhoneModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3787B3011F77D4B900DD85F1 /* PhoneModel.swift */; };
 		37E74B091F701B34004FC162 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E74B081F701B34004FC162 /* Strings.swift */; };
 		37E74B0D1F704505004FC162 /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E74B0B1F704505004FC162 /* Assets.swift */; };
 		37E74B0E1F704505004FC162 /* Storyboards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E74B0C1F704505004FC162 /* Storyboards.swift */; };
@@ -52,13 +55,27 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		3787B2FB1F77D37C00DD85F1 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				3787B2FA1F77D37C00DD85F1 /* RealmSwift.framework in Embed Frameworks */,
+				3787B2F81F77D37C00DD85F1 /* Realm.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		09031F9D1F6ECA7600FBAB7A /* CodeGenDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CodeGenDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		09031F9F1F6ECA7600FBAB7A /* CodeGenDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeGenDemoTests.swift; sourceTree = "<group>"; };
 		09031FA11F6ECA7600FBAB7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		09031FA81F6ECBC700FBAB7A /* Phone1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Phone1.json; sourceTree = "<group>"; };
 		092C6D081F6EEB5200856FE3 /* PhoneEditorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneEditorViewController.swift; sourceTree = "<group>"; };
-		092C6D0A1F6EF31400856FE3 /* Ref.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ref.swift; sourceTree = "<group>"; };
 		092C6D0F1F6F31FB00856FE3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
 		092C6D111F6F356900856FE3 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
 		092C6D121F6F365600856FE3 /* Avenir.ttc */ = {isa = PBXFileReference; lastKnownFileType = file; path = Avenir.ttc; sourceTree = "<group>"; };
@@ -77,10 +94,12 @@
 		370CDA861F585A4A000C7FD1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		370CDA891F585A4A000C7FD1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		370CDA8B1F585A4A000C7FD1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		370CDA951F585A91000C7FD1 /* PhoneModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneModel.swift; sourceTree = "<group>"; };
-		370CDAA21F585EC4000C7FD1 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
-		370CDAA41F585EF0000C7FD1 /* Address.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Address.swift; sourceTree = "<group>"; };
-		370CDAA71F586051000C7FD1 /* Phone.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Phone.swift; sourceTree = "<group>"; };
+		3787B2F51F77D37C00DD85F1 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Realm.framework; sourceTree = "<group>"; };
+		3787B2F61F77D37C00DD85F1 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RealmSwift.framework; sourceTree = "<group>"; };
+		3787B2FE1F77D4B900DD85F1 /* Address.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Address.swift; sourceTree = "<group>"; };
+		3787B2FF1F77D4B900DD85F1 /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		3787B3001F77D4B900DD85F1 /* Phone.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Phone.swift; sourceTree = "<group>"; };
+		3787B3011F77D4B900DD85F1 /* PhoneModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhoneModel.swift; sourceTree = "<group>"; };
 		37E74B081F701B34004FC162 /* Strings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
 		37E74B0B1F704505004FC162 /* Assets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
 		37E74B0C1F704505004FC162 /* Storyboards.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Storyboards.swift; sourceTree = "<group>"; };
@@ -108,6 +127,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3787B2F91F77D37C00DD85F1 /* RealmSwift.framework in Frameworks */,
+				3787B2F71F77D37C00DD85F1 /* Realm.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,6 +157,7 @@
 		09A80B921F6EDDE700FAF99B /* CodeGen */ = {
 			isa = PBXGroup;
 			children = (
+				3787B2FD1F77D4B900DD85F1 /* Models */,
 				09A80B931F6EDDF900FAF99B /* Constants */,
 				37E74B1E1F71738D004FC162 /* Generated */,
 			);
@@ -157,6 +179,8 @@
 		370CDA731F585A4A000C7FD1 = {
 			isa = PBXGroup;
 			children = (
+				3787B2F51F77D37C00DD85F1 /* Realm.framework */,
+				3787B2F61F77D37C00DD85F1 /* RealmSwift.framework */,
 				370CDA7E1F585A4A000C7FD1 /* CodeGenDemo */,
 				09031F9E1F6ECA7600FBAB7A /* CodeGenDemoTests */,
 				370CDA7D1F585A4A000C7FD1 /* Products */,
@@ -187,22 +211,9 @@
 			isa = PBXGroup;
 			children = (
 				37E74B291F7177DE004FC162 /* SourceryProtocols.swift */,
-				370CDA941F585A7F000C7FD1 /* Model */,
 				370CDAAF1F58625B000C7FD1 /* ViewControllers */,
 			);
 			path = Sources;
-			sourceTree = "<group>";
-		};
-		370CDA941F585A7F000C7FD1 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				370CDA951F585A91000C7FD1 /* PhoneModel.swift */,
-				370CDAA71F586051000C7FD1 /* Phone.swift */,
-				370CDAA41F585EF0000C7FD1 /* Address.swift */,
-				370CDAA21F585EC4000C7FD1 /* Person.swift */,
-				092C6D0A1F6EF31400856FE3 /* Ref.swift */,
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		370CDAAA1F586129000C7FD1 /* Resources */ = {
@@ -233,6 +244,17 @@
 				092C6D081F6EEB5200856FE3 /* PhoneEditorViewController.swift */,
 			);
 			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		3787B2FD1F77D4B900DD85F1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3787B2FE1F77D4B900DD85F1 /* Address.swift */,
+				3787B2FF1F77D4B900DD85F1 /* Person.swift */,
+				3787B3001F77D4B900DD85F1 /* Phone.swift */,
+				3787B3011F77D4B900DD85F1 /* PhoneModel.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		37E74B1E1F71738D004FC162 /* Generated */ = {
@@ -278,6 +300,8 @@
 				370CDA781F585A4A000C7FD1 /* Sources */,
 				370CDA791F585A4A000C7FD1 /* Frameworks */,
 				370CDA7A1F585A4A000C7FD1 /* Resources */,
+				3787B2FB1F77D37C00DD85F1 /* Embed Frameworks */,
+				3787B2FC1F77D38500DD85F1 /* Realm: Strip Frameworks */,
 			);
 			buildRules = (
 			);
@@ -356,6 +380,20 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		3787B2FC1F77D38500DD85F1 /* Realm: Strip Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Realm: Strip Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "bash \"${BUILT_PRODUCTS_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework/strip-frameworks.sh\"\n";
+		};
 		37E74B071F70146D004FC162 /* 🛠 SwiftGen */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -402,25 +440,24 @@
 				37E74B121F70465C004FC162 /* Fonts.swift in Sources */,
 				37E74B2C1F7179BB004FC162 /* AutoCases.generated.swift in Sources */,
 				37E74B2A1F7177DE004FC162 /* SourceryProtocols.swift in Sources */,
-				370CDAA81F586051000C7FD1 /* Phone.swift in Sources */,
 				37E74B111F70465C004FC162 /* Colors.swift in Sources */,
+				3787B3051F77D4B900DD85F1 /* PhoneModel.swift in Sources */,
+				3787B3041F77D4B900DD85F1 /* Phone.swift in Sources */,
 				09A80B911F6EDABD00FAF99B /* PersonListCell.swift in Sources */,
-				370CDAA51F585EF0000C7FD1 /* Address.swift in Sources */,
+				3787B3021F77D4B900DD85F1 /* Address.swift in Sources */,
 				092C6D091F6EEB5200856FE3 /* PhoneEditorViewController.swift in Sources */,
 				370CDA821F585A4A000C7FD1 /* PersonListViewController.swift in Sources */,
 				37E74B2E1F718480004FC162 /* AutoJSONDeserializable.generated.swift in Sources */,
 				37E74B251F71738D004FC162 /* stats.generated.swift in Sources */,
+				3787B3031F77D4B900DD85F1 /* Person.swift in Sources */,
 				370CDA801F585A4A000C7FD1 /* AppDelegate.swift in Sources */,
 				37E74B311F718F4F004FC162 /* AutoEquatable.generated.swift in Sources */,
 				37E74B0E1F704505004FC162 /* Storyboards.swift in Sources */,
 				09A80B991F6EE1BF00FAF99B /* PersonRecordCell.swift in Sources */,
-				370CDA961F585A91000C7FD1 /* PhoneModel.swift in Sources */,
 				37E74B0D1F704505004FC162 /* Assets.swift in Sources */,
 				37E74B341F719DC8004FC162 /* AutoStringProperties.generated.swift in Sources */,
-				092C6D0B1F6EF31400856FE3 /* Ref.swift in Sources */,
 				09A80B971F6EDFD800FAF99B /* PersonRecordViewController.swift in Sources */,
 				37E74B091F701B34004FC162 /* Strings.swift in Sources */,
-				370CDAA31F585EC4000C7FD1 /* Person.swift in Sources */,
 				37E74B321F718F4F004FC162 /* AutoHashable.generated.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -616,6 +653,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = CodeGenDemo/Resources/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -631,6 +672,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = CodeGenDemo/Resources/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

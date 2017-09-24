@@ -34,6 +34,8 @@ extension Person {
   static let stringProperties: [String] = [
     L10n.Person.firstName,
     L10n.Person.lastName,
+    L10n.Person.firstName,
+    L10n.Person.lastName,
   ]
 
   subscript(propertyIndex idx: Int) -> String {
@@ -41,6 +43,8 @@ extension Person {
       switch idx+1 {
       case 1: return self.firstName
       case 2: return self.lastName
+      case 3: return self.firstName
+      case 4: return self.lastName
       default: fatalError("Out of bounds")
       }
     }
@@ -48,6 +52,8 @@ extension Person {
       switch idx+1 {
       case 1: self.firstName = newValue
       case 2: self.lastName = newValue
+      case 3: self.firstName = newValue
+      case 4: self.lastName = newValue
       default: fatalError("Out of bounds")
       }
     }
