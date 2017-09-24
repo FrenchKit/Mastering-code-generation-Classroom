@@ -93,6 +93,7 @@
 		37E74B2F1F718F4F004FC162 /* AutoEquatable.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoEquatable.generated.swift; sourceTree = "<group>"; };
 		37E74B301F718F4F004FC162 /* AutoHashable.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoHashable.generated.swift; sourceTree = "<group>"; };
 		37E74B331F719DC8004FC162 /* AutoStringProperties.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoStringProperties.generated.swift; sourceTree = "<group>"; };
+		37E74B6D1F77B6DE004FC162 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -207,6 +208,7 @@
 		370CDAAA1F586129000C7FD1 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				37E74B6C1F77B6DE004FC162 /* Model.xcdatamodeld */,
 				092C6D141F6F377100856FE3 /* colors.json */,
 				092C6D151F6F377100856FE3 /* colors.xml */,
 				092C6D121F6F365600856FE3 /* Avenir.ttc */,
@@ -670,6 +672,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		37E74B6C1F77B6DE004FC162 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				37E74B6D1F77B6DE004FC162 /* Model.xcdatamodel */,
+			);
+			currentVersion = 37E74B6D1F77B6DE004FC162 /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 370CDA741F585A4A000C7FD1 /* Project object */;
 }
