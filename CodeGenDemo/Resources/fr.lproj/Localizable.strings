@@ -1,0 +1,9 @@
+/* 
+  Localizable.strings
+  CodeGenDemo
+
+  Created by Olivier Halligon on 09/06/2019.
+  Copyright © 2019 Olivier Halligon. All rights reserved.
+*/
+
+"welcome" = "Bienvenue sur %@";
