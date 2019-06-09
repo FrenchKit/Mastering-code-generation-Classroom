@@ -1,0 +1,33 @@
+{% for enum in types.enums %}
+{{ enum.accessLevel }} extension {{enum.localName}} {
+  {% for case in enum.cases %}
+    {% if case.hasAssociatedValue %}
+    {% set returnType %}{% filter removeNewlines:leading %}
+      {% if case.associatedValues.count == 1 %}
+        {{case.associatedValues.first.typeName}}
+      {% else %}
+        ({% for av in case.associatedValues %}
+          {% if av.localName %}{{av.localName}}: {% endif %}{{av.typeName}}{% if not forloop.last %}, {% endif %}
+        {% endfor %})
+      {% endif %}
+    {% endfilter %}{% endset %}
+
+    var {{case.name}}: {{returnType}}? {
+        guard case let .{{case.name}}(value) = self else { return nil }
+        return value
+    }
+    {% else %}
+
+    var {{case.name}}: Void? {
+        guard case .{{case.name}} = self else { return nil }
+        return ()
+    }
+    {% endif %}
+
+    var is{{case.name|upperFirstLetter}}: Bool {
+        return {{case.name}} != nil
+    }
+  {% endfor %}
+
+}
+{% endfor %}

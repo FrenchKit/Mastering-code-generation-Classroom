@@ -1,0 +1,34 @@
+# input_dir: .
+output_dir: CodeGenDemo/Generated/
+
+xcassets:
+  inputs:
+    - "CodeGenDemo/Resources/Assets.xcassets"
+  outputs:
+    - templateName: "swift4"
+      output: "Assets.swift"
+
+fonts:
+  inputs:
+    - "CodeGenDemo/Resources/Fonts/"
+  outputs:
+    - templateName: "swift4"
+      output: "Fonts.swift"
+
+yaml:
+  - inputs: "InputData/ships.yml"
+    outputs:
+    - templatePath: "InputData/ships.stencil"
+      output: "ItemStore+Ships.swift"
+  - inputs: "InputData/people.yml"
+    outputs:
+    - templatePath: "InputData/people.stencil"
+      output: "ItemStore+People.swift"
+  - inputs: "InputData/planets.yml"
+    outputs:
+    - templatePath: "InputData/planets.stencil"
+      output: "ItemStore+Planets.swift"
+  - inputs: "InputData/films.yml"
+    outputs:
+    - templatePath: "InputData/films.stencil"
+      output: "ItemStore+Films.swift"

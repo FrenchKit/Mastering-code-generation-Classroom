@@ -1,0 +1,6 @@
+framework module Pods_CodeGenDemo {
+  umbrella header "Pods-CodeGenDemo-umbrella.h"
+
+  export *
+  module * { export * }
+}

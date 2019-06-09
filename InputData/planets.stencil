@@ -1,0 +1,28 @@
+extension ItemStore {
+  static let planets: [Planet] = [
+  {% for file in files %}
+  // From file: {{file.name}}
+  {% if file.documents.first.data %}
+  {% for planet in file.documents.first.data %}
+    Planet(
+      id: {{planet.url|replace:"https://swapi.co/api/planets/",""|replace:"/",""}},
+      name: "{{planet.name}}",
+      rotationPeriod: {{planet.rotation_period|replace:"unknown","nil"}},
+      orbitalPeriod: {{planet.orbital_period|replace:"unknown","nil"}},
+      diameter: {{planet.diameter|replace:"unknown","nil"}},
+      climate: "{{planet.climate}}",
+      gravity: "{{planet.gravity}}",
+      terrain: "{{planet.terrain}}",
+      surfaceWater: {{planet.surface_water|replace:"unknown","nil"}},
+      population: {{planet.population|replace:"unknown","nil"}},
+      residents: [{% for person in planet.residents %}
+        {{person|replace:"https://swapi.co/api/people/",""|replace:"/",""}}{% if not forloop.last %},{% endif %}
+      {% endfor %}],
+      films: [{% for film in planet.films %}
+        {{film|replace:"https://swapi.co/api/films/",""|replace:"/",""}}{% if not forloop.last %},{% endif %}
+      {% endfor %}]
+    ){% if not forloop.last %},{% endif %}
+  {% endfor %}
+  {% endif %}{% endfor %}
+  ]
+}

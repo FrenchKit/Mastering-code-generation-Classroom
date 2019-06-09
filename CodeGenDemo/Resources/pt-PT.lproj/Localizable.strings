@@ -2,8 +2,68 @@
   Localizable.strings
   CodeGenDemo
 
-  Created by Olivier Halligon on 09/06/2019.
   Copyright © 2019 Olivier Halligon. All rights reserved.
 */
 
-"welcome" = "Bem-vindo ao %@";
+"welcome" = "Bem-vindo(a) a %@";
+"list.title" = "Catálogo StarWars";
+"detail.title" = "Detalhes do item";
+
+// MARK: Filters
+"filters.all" = "Todos";
+"filters.ships" = "Naves";
+"filters.persons" = "Personagens";
+"filters.planets" = "Planetas";
+"filters.films" = "Filmes";
+
+// MARK: Ship Fields
+"ship.description" = "A %@ é uma nave %@ com uma tripulação composta por %i pessoas, capaz de levar %i passageiros e com %.2f metros de comprimento.";
+"ship.name" = "Nome";
+"ship.model" = "Modelo";
+"ship.manufacturer" = "Fabricante";
+"ship.starshipClass" = "Classe da nave";
+"ship.costInCredits" = "Preço (créditos)";
+"ship.length" = "Comprimento (m)";
+"ship.crew" = "Tripulação";
+"ship.passengers" = "Passageiros";
+"ship.pilots" = "Pilotos";
+"ship.films" = "Filmes";
+
+// MARK: Person Fields
+"person.description" = "%@ tem %d cm, pesa %.1f kg e apareceu em  %i filme(s).";
+"person.name" = "Nome";
+"person.height" = "Altura (cm)";
+"person.mass" = "Peso (kg)";
+"person.hairColor" = "Cor do cabelo";
+"person.skinColor" = "Cor da pele";
+"person.eyeColor" = "Cor dos olhos";
+"person.homeworld" = "Planeta natal";
+"person.films" = "Filmes";
+"person.starships" = "Naves";
+
+// MARK: Planet Fields
+"planet.description" = "%1$@ é o planeta natal de %3$@. Apareceu em %2$d filmes.";
+"planet.description.noResident" = "ninguém"; // Used in place of the %3$@ in the string above if residents.isEmpty
+"planet.name" = "Nome";
+"planet.rotationPeriod" = "Período de rotação";
+"planet.orbitalPeriod" = "Período de translação";
+"planet.diameter" = "Diametro (m)";
+"planet.climate" = "Clima";
+"planet.gravity" = "Gravidade";
+"planet.terrain" = "Terreno";
+"planet.surfaceWater" = "% de água na superfície";
+"planet.population" = "População";
+"planet.residents" = "Residentes";
+"planet.films" = "Filmes";
+
+// MARK: Film Fields
+"film.description" = "%@ é o episódio #%d de StarWars. Foi lançado em %@.";
+"film.episodeID" = "Episódio #";
+"film.title" = "Título";
+"film.openingCrawl" = "Texto inicial";
+"film.director" = "Director";
+"film.producer" = "Produtor";
+"film.releaseDate" = "Data de lançamento";
+"film.characters" = "Personagens";
+"film.planets" = "Planetas";
+"film.starships" = "Naves";

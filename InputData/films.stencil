@@ -1,0 +1,30 @@
+extension ItemStore {
+  static let films: [Film] = [
+  {% for file in files %}
+  // From file: {{file.name}}
+  {% if file.documents.first.data %}
+  {% for film in file.documents.first.data %}
+    Film(
+      id: {{film.url|replace:"https://swapi.co/api/films/",""|replace:"/",""}},
+      episodeID: {{film.episode_id}},
+      title: "{{film.title}}",
+      openingCrawl: """
+        {{film.opening_crawl|indent:8}}
+        """,
+      director: "{{film.director}}",
+      producer: "{{film.producer}}",
+      releaseDate: "{{film.release_date}}",
+      characters: [{% for person in film.characters %}
+        {{person|replace:"https://swapi.co/api/people/",""|replace:"/",""}}{% if not forloop.last %},{% endif %}
+      {% endfor %}],
+      planets: [{% for planet in film.planets %}
+        {{planet|replace:"https://swapi.co/api/planets/",""|replace:"/",""}}{% if not forloop.last %},{% endif %}
+      {% endfor %}],
+      starships: [{% for ship in film.starships %}
+        {{ship|replace:"https://swapi.co/api/starships/",""|replace:"/",""}}{% if not forloop.last %},{% endif %}
+      {% endfor %}]
+    ){% if not forloop.last %},{% endif %}
+  {% endfor %}
+  {% endif %}{% endfor %}
+  ]
+}

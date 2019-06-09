@@ -2,8 +2,68 @@
   Localizable.strings
   CodeGenDemo
 
-  Created by Olivier Halligon on 09/06/2019.
   Copyright © 2019 Olivier Halligon. All rights reserved.
 */
 
 "welcome" = "Welcome to %@";
+"list.title" = "StarWars Catalog";
+"detail.title" = "Item Details";
+
+// MARK: Filters
+"filters.all" = "All";
+"filters.ships" = "Ships";
+"filters.persons" = "Characters";
+"filters.planets" = "Planets";
+"filters.films" = "Films";
+
+// MARK: Ship Fields
+"ship.description" = "The %@ is a %@ ship which is crewed by %i people, can carry %i passengers and is %.2f meters long.";
+"ship.name" = "Name";
+"ship.model" = "Model";
+"ship.manufacturer" = "Manufacturer";
+"ship.starshipClass" = "Starship Class";
+"ship.costInCredits" = "Cost (credits)";
+"ship.length" = "Length (m)";
+"ship.crew" = "Crew";
+"ship.passengers" = "Passengers";
+"ship.pilots" = "Pilots";
+"ship.films" = "Films";
+
+// MARK: Person Fields
+"person.description" = "%@ is %d cm, weighs %.1f kg, and has appeared in %i film(s).";
+"person.name" = "Name";
+"person.height" = "Height (cm)";
+"person.mass" = "Mass (kg)";
+"person.hairColor" = "Hair Color";
+"person.skinColor" = "Skin Color";
+"person.eyeColor" = "Eye Color";
+"person.homeworld" = "Homeworld";
+"person.films" = "Films";
+"person.starships" = "Starships";
+
+// MARK: Planet Fields
+"planet.description" = "%1$@ is the home planet of %3$@. It appeared in %2$d film(s).";
+"planet.description.noResident" = "nobody";
+"planet.name" = "Name";
+"planet.rotationPeriod" = "Rotation Period";
+"planet.orbitalPeriod" = "Orbital Period";
+"planet.diameter" = "Diameter (m)";
+"planet.climate" = "Climate";
+"planet.gravity" = "Gravity";
+"planet.terrain" = "Terrain";
+"planet.surfaceWater" = "Surface Water (%)";
+"planet.population" = "Population";
+"planet.residents" = "Residents";
+"planet.films" = "Films";
+
+// MARK: Film Fields
+"film.description" = "%@ is StarWars' episode #%d. It was released in %@.";
+"film.episodeID" = "Episode #";
+"film.title" = "Title";
+"film.openingCrawl" = "Opening Crawl";
+"film.director" = "Director";
+"film.producer" = "Producer";
+"film.releaseDate" = "Release Date";
+"film.characters" = "Characters";
+"film.planets" = "Planets";
+"film.starships" = "Starships";

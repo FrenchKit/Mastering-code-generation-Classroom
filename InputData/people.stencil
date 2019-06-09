@@ -1,0 +1,26 @@
+extension ItemStore {
+  static let people: [Person] = [
+  {% for file in files %}
+  // From file: {{file.name}}
+  {% if file.documents.first.data %}
+  {% for person in file.documents.first.data %}
+    Person(
+      id: {{person.url|replace:"https://swapi.co/api/people/",""|replace:"/",""}},
+      name: "{{person.name}}",
+      height: {{person.height|replace:"unknown","nil"}},
+      mass: {{person.mass|replace:"unknown","nil"|replace:",","_"}},
+      hairColor: "{{person.hair_color}}",
+      skinColor: "{{person.skin_color}}",
+      eyeColor: "{{person.eye_color}}",
+      homeworld: {{person.homeworld|replace:"https://swapi.co/api/planets/",""|replace:"/",""}},
+      films: [{% for film in person.films %}
+        {{film|replace:"https://swapi.co/api/films/",""|replace:"/",""}}{% if not forloop.last %},{% endif %}
+      {% endfor %}],
+      starships: [{% for ship in person.startships %}
+        {{ship|replace:"https://swapi.co/api/starships/",""|replace:"/",""}}{% if not forloop.last %},{% endif %}
+      {% endfor %}]
+    ){% if not forloop.last %},{% endif %}
+  {% endfor %}
+  {% endif %}{% endfor %}
+  ]
+}

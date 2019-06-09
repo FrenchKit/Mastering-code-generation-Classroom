@@ -1,0 +1,35 @@
+/* 
+  Localizable.strings
+  CodeGenDemo
+
+  Created by Olivier Halligon on 18/09/2017.
+  Copyright © 2017 AliSoftware. All rights reserved.
+*/
+
+"PersonList.phones.count" = "%d téléphones";
+
+"PersonList.dupes.title" = "Téléphones";
+"PersonList.dupes.message" = "Il y a %1$d téléphones distincts sur %2$d téléphones au total.";
+"PersonList.dupes.button" = "OK";
+
+"PersonRecord.section.person" = "Personne";
+"PersonRecord.section.address" = "Adresse";
+"PersonRecord.section.phones" = "Téléphones";
+"PersonRecord.edit.title" = "Nouvelle valeur";
+"PersonRecord.edit.cancel" = "Annuler";
+"PersonRecord.edit.ok" = "OK";
+
+"PhoneEditor.title.model" = "Choisissez un modèle";
+"PhoneEditor.title.name" = "Nom du téléphone";
+"PhoneEditor.random.button" = "Au hasard";
+"PhoneEditor.random.format" = "%1$@ #%2$d";
+"PhoneEditor.random.choice0" = "Mon iPhone";
+"PhoneEditor.random.choice1" = "Mon super iPhone";
+"PhoneEditor.random.choice2" = "iPhone";
+"PhoneEditor.random.choice3" = "Mon Précieux";
+
+"Person.firstName" = "Prénom";
+"Person.lastName" = "Nom";
+"Address.street" = "Rue";
+"Address.city" = "Ville";
+"Address.state" = "État";

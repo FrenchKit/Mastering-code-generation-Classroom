@@ -1,0 +1,27 @@
+extension ItemStore {
+  static let ships: [Ship] = [
+  {% for file in files %}
+  // From file: {{file.name}}
+  {% if file.documents.first.data %}
+  {% for ship in file.documents.first.data %}
+    Ship(
+      id: {{ship.url|replace:"https://swapi.co/api/starships/",""|replace:"/",""}},
+      name: "{{ship.name}}",
+      model: "{{ship.model}}",
+      manufacturer: "{{ship.manufacturer}}",
+      starshipClass: "{{ship.starship_class}}",
+      costInCredits: "{{ship.cost_in_credits}}",
+      length: {{ship.length|replace:"unknown","nil"|replace:",","_"}},
+      crew: {{ship.crew|replace:"unknown","nil"}},
+      passengers: {{ship.passengers|replace:"unknown","nil"}},
+      pilots: [{% for pilot in ship.pilots %}
+        {{pilot|replace:"https://swapi.co/api/people/",""|replace:"/",""}}{% if not forloop.last %},{% endif %}
+      {% endfor %}],
+      films: [{% for film in ship.films %}
+        {{film|replace:"https://swapi.co/api/films/",""|replace:"/",""}}{% if not forloop.last %},{% endif %}
+      {% endfor %}]
+    ){% if not forloop.last %},{% endif %}
+  {% endfor %}
+  {% endif %}{% endfor %}
+  ]
+}

@@ -16,9 +16,10 @@ During the workshop, we'll learn how to install SwiftGen and Sourcery. If you do
 
 During the workshop, we'll use the following websites
 
-* SwiftGen & Sourcery GitHub repositories for their README & documentation
+* [SwiftGen](https://github.com/SwiftGen/SwiftGen) & [Sourcery(https://github.com/krzysztofzablocki/Sourcery) repositories for their README & documentation
 * [Sourcery dedicated documentation's website](https://cdn.rawgit.com/krzysztofzablocki/Sourcery/master/docs/index.html)
 * [Stencil documentation](http://stencil.fuller.li/en/latest/builtins.html)
+* [StencilSwiftKit](https://github.com/SwiftGen/StencilSwiftKit) for additional Stencil tags and filters documentation
 
 ---
 

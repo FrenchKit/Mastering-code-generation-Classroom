@@ -1,0 +1,39 @@
+{% macro returnType case %}{% filter removeNewlines:leading %}
+    {% if case.associatedValues.count == 1 %}
+      {{case.associatedValues.first.typeName}}
+    {% else %}
+      ({% for av in case.associatedValues %}
+        {% if av.localName %}{{av.localName}}: {% endif %}{{av.typeName}}{% if not forloop.last %}, {% endif %}
+      {% endfor %})
+    {% endif %}
+{% endfilter %}{% endmacro %}
+
+{% for enum in types.enums %}
+{{ enum.accessLevel }} extension {{enum.localName}} {
+  struct EnumAssociatedValues {
+    fileprivate let base: {{enum.localName}}
+    {% for case in enum.cases %}{% if case.hasAssociatedValue %}
+    var {{case.name}}: {% call returnType case %}? {
+        guard case let .{{case.name}}(value) = base else { return nil }
+        return value
+    }
+    {% else %}
+    var {{case.name}}: Void? {
+        guard case .{{case.name}} = base else { return nil }
+        return ()
+    }
+    {% endif %}{% endfor %}
+  }
+  var `as`: EnumAssociatedValues { .init(base: self) }
+
+  struct EnumIdentity {
+    fileprivate let base: {{enum.localName}}.EnumAssociatedValues
+    {% for case in enum.cases %}
+    var {{case.name}}: Bool {
+        return base.{{case.name}} != nil
+    }
+    {% endfor %}
+  }
+  var `is`: EnumIdentity { .init(base: `as`) }
+}
+{% endfor %}

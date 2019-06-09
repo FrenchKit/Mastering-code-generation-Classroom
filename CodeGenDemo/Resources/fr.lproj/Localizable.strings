@@ -2,8 +2,69 @@
   Localizable.strings
   CodeGenDemo
 
-  Created by Olivier Halligon on 09/06/2019.
   Copyright © 2019 Olivier Halligon. All rights reserved.
 */
 
 "welcome" = "Bienvenue sur %@";
+"list.title" = "Catalogue StarWars";
+"detail.title" = "Détails sur l'élement";
+
+// MARK: Filters
+"filters.all" = "Tous";
+"filters.ships" = "Vaisseaux";
+"filters.persons" = "Persos";
+"filters.planets" = "Planètes";
+"filters.films" = "Films";
+
+// MARK: Ship Fields
+"ship.description" = "Le %@ est un vaisseau de type %@ servi par %i membre(s) d'équipage; il peut transporter %i passagers et fait %.2f mètres.";
+"ship.name" = "Nom";
+"ship.model" = "Modèle";
+"ship.manufacturer" = "Constructeur";
+"ship.starshipClass" = "Classe";
+"ship.costInCredits" = "Cout (crédits)";
+"ship.length" = "Longeur (m)";
+"ship.crew" = "Equipage";
+"ship.passengers" = "Passagers";
+"ship.pilots" = "Pilotes";
+"ship.films" = "Films";
+
+// MARK: Person Fields
+"person.description" = "%@ fait %d cm, pèse %.1f kg et est apparu dans %i film(s).";
+"person.name" = "Nom";
+"person.height" = "Taille (cm)";
+"person.mass" = "Poids (kg)";
+"person.hairColor" = "Couleur de Cheveux";
+"person.skinColor" = "Couleur de Peau";
+"person.eyeColor" = "Couleur des Yeux";
+"person.homeworld" = "Planète d'Origine";
+"person.films" = "Films";
+"person.starships" = "Vaisseaux";
+
+// MARK: Planet Fields
+"planet.description" = "%1$@ est la planète d'origine de %3$@. Elle est apparue dans %2$d film(s).";
+"planet.description.noResident" = "personne";
+"planet.name" = "Nom";
+"planet.rotationPeriod" = "Période de Rotation";
+"planet.orbitalPeriod" = "Période Orbitale";
+"planet.diameter" = "Diamètre (m)";
+"planet.climate" = "Climat";
+"planet.gravity" = "Gravité";
+"planet.terrain" = "Terrain";
+"planet.surfaceWater" = "Eau en Surface (%)";
+"planet.population" = "Population";
+"planet.residents" = "Résidents";
+"planet.films" = "Films";
+
+// MARK: Film Fields
+"film.description" = "%@ est l'épisode #%d de StarWars. Il est sorti le %@.";
+"film.episodeID" = "Episode #";
+"film.title" = "Titre";
+"film.openingCrawl" = "Texte d'ouverture";
+"film.director" = "Directeur";
+"film.producer" = "Producteur";
+"film.releaseDate" = "Date de Sortie";
+"film.characters" = "Personnages";
+"film.planets" = "Planètes";
+"film.starships" = "Vaisseaux";
+

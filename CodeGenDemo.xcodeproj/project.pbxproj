@@ -7,32 +7,53 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3842FAD222B3EECF006CDE8F /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3842FAD122B3EECF006CDE8F /* Person.swift */; };
+		3842FAD422B3EF2A006CDE8F /* Planet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3842FAD322B3EF2A006CDE8F /* Planet.swift */; };
+		3842FAD622B3EF5A006CDE8F /* Film.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3842FAD522B3EF5A006CDE8F /* Film.swift */; };
+		3842FAD822B3F6B2006CDE8F /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3842FAD722B3F6B2006CDE8F /* Item.swift */; };
 		385D00D622AD43CC00319703 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385D00D522AD43CC00319703 /* AppDelegate.swift */; };
-		385D00D822AD43CC00319703 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385D00D722AD43CC00319703 /* MasterViewController.swift */; };
+		385D00D822AD43CC00319703 /* ItemListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385D00D722AD43CC00319703 /* ItemListViewController.swift */; };
 		385D00DA22AD43CC00319703 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385D00D922AD43CC00319703 /* DetailViewController.swift */; };
-		385D00DD22AD43CC00319703 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 385D00DB22AD43CC00319703 /* Main.storyboard */; };
+		385D00DD22AD43CC00319703 /* Welcome.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 385D00DB22AD43CC00319703 /* Welcome.storyboard */; };
 		385D00E222AD43CC00319703 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 385D00E022AD43CC00319703 /* LaunchScreen.storyboard */; };
 		385D00ED22AD43CD00319703 /* CodeGenDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385D00EC22AD43CD00319703 /* CodeGenDemoTests.swift */; };
 		385D010F22AD44A800319703 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 385D00F822AD44A800319703 /* Assets.xcassets */; };
-		385D011122AD44A800319703 /* soloisthalf.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 385D00FC22AD44A800319703 /* soloisthalf.ttf */; };
-		385D011222AD44A800319703 /* soloistital1.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 385D00FD22AD44A800319703 /* soloistital1.ttf */; };
-		385D011322AD44A800319703 /* soloist1.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 385D00FE22AD44A800319703 /* soloist1.ttf */; };
-		385D011422AD44A800319703 /* soloiststraight1.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 385D00FF22AD44A800319703 /* soloiststraight1.ttf */; };
-		385D011522AD44A800319703 /* soloistlaser1.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 385D010022AD44A800319703 /* soloistlaser1.ttf */; };
-		385D011622AD44A800319703 /* soloistexpand1.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 385D010122AD44A800319703 /* soloistexpand1.ttf */; };
-		385D011722AD44A800319703 /* soloisthalf1.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 385D010222AD44A800319703 /* soloisthalf1.ttf */; };
-		385D011922AD44A800319703 /* soloistleft1.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 385D010422AD44A800319703 /* soloistleft1.ttf */; };
-		385D011A22AD44A800319703 /* soloistgrad1.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 385D010522AD44A800319703 /* soloistgrad1.ttf */; };
-		385D011B22AD44A800319703 /* soloist3d.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 385D010622AD44A800319703 /* soloist3d.ttf */; };
-		385D011C22AD44A800319703 /* soloistchrome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 385D010722AD44A800319703 /* soloistchrome.ttf */; };
-		385D011D22AD44A800319703 /* soloistextraital1.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 385D010822AD44A800319703 /* soloistextraital1.ttf */; };
-		385D011E22AD44A800319703 /* soloisttitle1.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 385D010922AD44A800319703 /* soloisttitle1.ttf */; };
-		385D011F22AD44A800319703 /* soloistacad.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 385D010A22AD44A800319703 /* soloistacad.ttf */; };
-		385D012022AD44A800319703 /* soloisthalf21.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 385D010B22AD44A800319703 /* soloisthalf21.ttf */; };
-		385D012122AD44A800319703 /* soloistout.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 385D010C22AD44A800319703 /* soloistout.ttf */; };
-		385D012222AD44A800319703 /* soloistlaserital1.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 385D010D22AD44A800319703 /* soloistlaserital1.ttf */; };
-		385D012322AD44A800319703 /* soloistcond1.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 385D010E22AD44A800319703 /* soloistcond1.ttf */; };
 		385D012622AD45CC00319703 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 385D012822AD45CC00319703 /* Localizable.strings */; };
+		385D012C22AD519E00319703 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385D012B22AD519E00319703 /* WelcomeViewController.swift */; };
+		385D013122AD555F00319703 /* spaceship.json in Resources */ = {isa = PBXBuildFile; fileRef = 385D012F22AD555F00319703 /* spaceship.json */; };
+		385D013622AD568500319703 /* ItemList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 385D013522AD568400319703 /* ItemList.storyboard */; };
+		385D014522AD5E0100319703 /* SFDistantGalaxyOutline-Ital.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 385D013B22AD5E0000319703 /* SFDistantGalaxyOutline-Ital.ttf */; };
+		385D014622AD5E0100319703 /* SFDistantGalaxyAlternate.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 385D013C22AD5E0000319703 /* SFDistantGalaxyAlternate.ttf */; };
+		385D014722AD5E0100319703 /* SFDistantGalaxyAlternate-It.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 385D013D22AD5E0100319703 /* SFDistantGalaxyAlternate-It.ttf */; };
+		385D014822AD5E0100319703 /* SFDistantGalaxyOutline.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 385D013E22AD5E0100319703 /* SFDistantGalaxyOutline.ttf */; };
+		385D014922AD5E0100319703 /* SFDistantGalaxySymbols.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 385D013F22AD5E0100319703 /* SFDistantGalaxySymbols.ttf */; };
+		385D014A22AD5E0100319703 /* SFDistantGalaxy.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 385D014022AD5E0100319703 /* SFDistantGalaxy.ttf */; };
+		385D014B22AD5E0100319703 /* SFDistantGalaxy-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 385D014122AD5E0100319703 /* SFDistantGalaxy-Italic.ttf */; };
+		385D014C22AD5E0100319703 /* SFDistantGalaxySymbols-Ital.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 385D014222AD5E0100319703 /* SFDistantGalaxySymbols-Ital.ttf */; };
+		385D014D22AD5E0100319703 /* SFDistantGalaxyAltOutline-I.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 385D014322AD5E0100319703 /* SFDistantGalaxyAltOutline-I.ttf */; };
+		385D014E22AD5E0100319703 /* SFDistantGalaxyAltOutline.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 385D014422AD5E0100319703 /* SFDistantGalaxyAltOutline.ttf */; };
+		385D015022AD5F8000319703 /* Ship.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385D014F22AD5F8000319703 /* Ship.swift */; };
+		385D015322AD687F00319703 /* ItemStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385D015222AD687F00319703 /* ItemStore.swift */; };
+		385D015522AD79AD00319703 /* ItemFields.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385D015422AD79AD00319703 /* ItemFields.swift */; };
+		38A926CE22B466570043713F /* ItemStore+Ships.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A926CC22B466570043713F /* ItemStore+Ships.swift */; };
+		38A926CF22B466570043713F /* ItemStore+People.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A926CD22B466570043713F /* ItemStore+People.swift */; };
+		38A926D122B46A7D0043713F /* ItemStore+Planets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A926D022B46A7D0043713F /* ItemStore+Planets.swift */; };
+		38A926D322B46ED00043713F /* ItemStore+Films.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A926D222B46ED00043713F /* ItemStore+Films.swift */; };
+		38A926D422B473850043713F /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3842FAD722B3F6B2006CDE8F /* Item.swift */; };
+		38A926D522B473850043713F /* ItemStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385D015222AD687F00319703 /* ItemStore.swift */; };
+		38A926D622B473850043713F /* ItemStore+Planets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A926D022B46A7D0043713F /* ItemStore+Planets.swift */; };
+		38A926D722B473850043713F /* ItemStore+People.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A926CD22B466570043713F /* ItemStore+People.swift */; };
+		38A926D822B473850043713F /* ItemStore+Ships.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A926CC22B466570043713F /* ItemStore+Ships.swift */; };
+		38A926D922B473850043713F /* ItemStore+Films.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A926D222B46ED00043713F /* ItemStore+Films.swift */; };
+		38A926DA22B473850043713F /* Ship.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385D014F22AD5F8000319703 /* Ship.swift */; };
+		38A926DB22B473850043713F /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3842FAD122B3EECF006CDE8F /* Person.swift */; };
+		38A926DC22B473850043713F /* Planet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3842FAD322B3EF2A006CDE8F /* Planet.swift */; };
+		38A926DD22B473850043713F /* Film.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3842FAD522B3EF5A006CDE8F /* Film.swift */; };
+		38FB4F4D22B56FBF00C0FC7A /* bb8.json in Resources */ = {isa = PBXBuildFile; fileRef = 38FB4F4B22B56FBF00C0FC7A /* bb8.json */; };
+		38FB4F4E22B56FBF00C0FC7A /* lightsaber.json in Resources */ = {isa = PBXBuildFile; fileRef = 38FB4F4C22B56FBF00C0FC7A /* lightsaber.json */; };
+		38FB4F5622B585DC00C0FC7A /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38FB4F5522B585DC00C0FC7A /* Model.swift */; };
+		38FB4F5822B5A51800C0FC7A /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38FB4F5522B585DC00C0FC7A /* Model.swift */; };
+		A8D8CB98664C6F48020D0EC9 /* Pods_CodeGenDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71538ACEC10E0E4797366E66 /* Pods_CodeGenDemo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,11 +67,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3842FAD122B3EECF006CDE8F /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		3842FAD322B3EF2A006CDE8F /* Planet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Planet.swift; sourceTree = "<group>"; };
+		3842FAD522B3EF5A006CDE8F /* Film.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Film.swift; sourceTree = "<group>"; };
+		3842FAD722B3F6B2006CDE8F /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		385D00D222AD43CC00319703 /* CodeGenDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CodeGenDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		385D00D522AD43CC00319703 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		385D00D722AD43CC00319703 /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
+		385D00D722AD43CC00319703 /* ItemListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemListViewController.swift; sourceTree = "<group>"; };
 		385D00D922AD43CC00319703 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
-		385D00DC22AD43CC00319703 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		385D00DC22AD43CC00319703 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Welcome.storyboard; sourceTree = "<group>"; };
 		385D00E122AD43CC00319703 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		385D00E322AD43CC00319703 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		385D00E822AD43CD00319703 /* CodeGenDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CodeGenDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -58,28 +83,35 @@
 		385D00EE22AD43CD00319703 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		385D00F822AD44A800319703 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		385D00FA22AD44A800319703 /* lottie.stencil */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = lottie.stencil; sourceTree = "<group>"; };
-		385D00FC22AD44A800319703 /* soloisthalf.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = soloisthalf.ttf; sourceTree = "<group>"; };
-		385D00FD22AD44A800319703 /* soloistital1.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = soloistital1.ttf; sourceTree = "<group>"; };
-		385D00FE22AD44A800319703 /* soloist1.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = soloist1.ttf; sourceTree = "<group>"; };
-		385D00FF22AD44A800319703 /* soloiststraight1.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = soloiststraight1.ttf; sourceTree = "<group>"; };
-		385D010022AD44A800319703 /* soloistlaser1.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = soloistlaser1.ttf; sourceTree = "<group>"; };
-		385D010122AD44A800319703 /* soloistexpand1.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = soloistexpand1.ttf; sourceTree = "<group>"; };
-		385D010222AD44A800319703 /* soloisthalf1.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = soloisthalf1.ttf; sourceTree = "<group>"; };
-		385D010322AD44A800319703 /* soloist.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = soloist.txt; sourceTree = "<group>"; };
-		385D010422AD44A800319703 /* soloistleft1.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = soloistleft1.ttf; sourceTree = "<group>"; };
-		385D010522AD44A800319703 /* soloistgrad1.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = soloistgrad1.ttf; sourceTree = "<group>"; };
-		385D010622AD44A800319703 /* soloist3d.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = soloist3d.ttf; sourceTree = "<group>"; };
-		385D010722AD44A800319703 /* soloistchrome.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = soloistchrome.ttf; sourceTree = "<group>"; };
-		385D010822AD44A800319703 /* soloistextraital1.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = soloistextraital1.ttf; sourceTree = "<group>"; };
-		385D010922AD44A800319703 /* soloisttitle1.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = soloisttitle1.ttf; sourceTree = "<group>"; };
-		385D010A22AD44A800319703 /* soloistacad.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = soloistacad.ttf; sourceTree = "<group>"; };
-		385D010B22AD44A800319703 /* soloisthalf21.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = soloisthalf21.ttf; sourceTree = "<group>"; };
-		385D010C22AD44A800319703 /* soloistout.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = soloistout.ttf; sourceTree = "<group>"; };
-		385D010D22AD44A800319703 /* soloistlaserital1.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = soloistlaserital1.ttf; sourceTree = "<group>"; };
-		385D010E22AD44A800319703 /* soloistcond1.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = soloistcond1.ttf; sourceTree = "<group>"; };
 		385D012722AD45CC00319703 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		385D012922AD461300319703 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
 		385D012A22AD462100319703 /* pt-PT */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-PT"; path = "pt-PT.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		385D012B22AD519E00319703 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		385D012F22AD555F00319703 /* spaceship.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = spaceship.json; sourceTree = "<group>"; };
+		385D013522AD568400319703 /* ItemList.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ItemList.storyboard; sourceTree = "<group>"; };
+		385D013B22AD5E0000319703 /* SFDistantGalaxyOutline-Ital.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFDistantGalaxyOutline-Ital.ttf"; sourceTree = "<group>"; };
+		385D013C22AD5E0000319703 /* SFDistantGalaxyAlternate.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SFDistantGalaxyAlternate.ttf; sourceTree = "<group>"; };
+		385D013D22AD5E0100319703 /* SFDistantGalaxyAlternate-It.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFDistantGalaxyAlternate-It.ttf"; sourceTree = "<group>"; };
+		385D013E22AD5E0100319703 /* SFDistantGalaxyOutline.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SFDistantGalaxyOutline.ttf; sourceTree = "<group>"; };
+		385D013F22AD5E0100319703 /* SFDistantGalaxySymbols.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SFDistantGalaxySymbols.ttf; sourceTree = "<group>"; };
+		385D014022AD5E0100319703 /* SFDistantGalaxy.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SFDistantGalaxy.ttf; sourceTree = "<group>"; };
+		385D014122AD5E0100319703 /* SFDistantGalaxy-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFDistantGalaxy-Italic.ttf"; sourceTree = "<group>"; };
+		385D014222AD5E0100319703 /* SFDistantGalaxySymbols-Ital.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFDistantGalaxySymbols-Ital.ttf"; sourceTree = "<group>"; };
+		385D014322AD5E0100319703 /* SFDistantGalaxyAltOutline-I.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFDistantGalaxyAltOutline-I.ttf"; sourceTree = "<group>"; };
+		385D014422AD5E0100319703 /* SFDistantGalaxyAltOutline.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SFDistantGalaxyAltOutline.ttf; sourceTree = "<group>"; };
+		385D014F22AD5F8000319703 /* Ship.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ship.swift; sourceTree = "<group>"; };
+		385D015222AD687F00319703 /* ItemStore.swift */ = {isa = PBXFileReference; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = ItemStore.swift; sourceTree = "<group>"; tabWidth = 2; };
+		385D015422AD79AD00319703 /* ItemFields.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemFields.swift; sourceTree = "<group>"; };
+		38A926CC22B466570043713F /* ItemStore+Ships.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ItemStore+Ships.swift"; sourceTree = "<group>"; };
+		38A926CD22B466570043713F /* ItemStore+People.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ItemStore+People.swift"; sourceTree = "<group>"; };
+		38A926D022B46A7D0043713F /* ItemStore+Planets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ItemStore+Planets.swift"; sourceTree = "<group>"; };
+		38A926D222B46ED00043713F /* ItemStore+Films.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ItemStore+Films.swift"; sourceTree = "<group>"; };
+		38FB4F4B22B56FBF00C0FC7A /* bb8.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = bb8.json; sourceTree = "<group>"; };
+		38FB4F4C22B56FBF00C0FC7A /* lightsaber.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = lightsaber.json; sourceTree = "<group>"; };
+		38FB4F5522B585DC00C0FC7A /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		71538ACEC10E0E4797366E66 /* Pods_CodeGenDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CodeGenDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4867AC91C023DA03AC186AF /* Pods-CodeGenDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CodeGenDemo.release.xcconfig"; path = "Target Support Files/Pods-CodeGenDemo/Pods-CodeGenDemo.release.xcconfig"; sourceTree = "<group>"; };
+		F45CA2F4BD576BC84B855358 /* Pods-CodeGenDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CodeGenDemo.debug.xcconfig"; path = "Target Support Files/Pods-CodeGenDemo/Pods-CodeGenDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +119,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A8D8CB98664C6F48020D0EC9 /* Pods_CodeGenDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,12 +133,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2DC99E7089B6563E6F6B2883 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F45CA2F4BD576BC84B855358 /* Pods-CodeGenDemo.debug.xcconfig */,
+				C4867AC91C023DA03AC186AF /* Pods-CodeGenDemo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		385D00C922AD43CC00319703 = {
 			isa = PBXGroup;
 			children = (
 				385D00D422AD43CC00319703 /* CodeGenDemo */,
 				385D00EB22AD43CD00319703 /* CodeGenDemoTests */,
 				385D00D322AD43CC00319703 /* Products */,
+				2DC99E7089B6563E6F6B2883 /* Pods */,
+				7CCAAA0E5DF1A019222FD827 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -122,12 +166,10 @@
 			isa = PBXGroup;
 			children = (
 				385D00D522AD43CC00319703 /* AppDelegate.swift */,
-				385D00D722AD43CC00319703 /* MasterViewController.swift */,
-				385D00D922AD43CC00319703 /* DetailViewController.swift */,
+				385D015122AD686800319703 /* Models */,
+				385D012D22AD51C200319703 /* ViewControllers */,
+				385D013A22AD5B9700319703 /* Generated */,
 				385D00F722AD44A800319703 /* Resources */,
-				385D00DB22AD43CC00319703 /* Main.storyboard */,
-				385D00E022AD43CC00319703 /* LaunchScreen.storyboard */,
-				385D00E322AD43CC00319703 /* Info.plist */,
 			);
 			path = CodeGenDemo;
 			sourceTree = "<group>";
@@ -144,10 +186,12 @@
 		385D00F722AD44A800319703 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				385D00E022AD43CC00319703 /* LaunchScreen.storyboard */,
 				385D00F822AD44A800319703 /* Assets.xcassets */,
 				385D00F922AD44A800319703 /* Lottie */,
 				385D00FB22AD44A800319703 /* Fonts */,
 				385D012822AD45CC00319703 /* Localizable.strings */,
+				385D00E322AD43CC00319703 /* Info.plist */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -155,6 +199,9 @@
 		385D00F922AD44A800319703 /* Lottie */ = {
 			isa = PBXGroup;
 			children = (
+				38FB4F4B22B56FBF00C0FC7A /* bb8.json */,
+				38FB4F4C22B56FBF00C0FC7A /* lightsaber.json */,
+				385D012F22AD555F00319703 /* spaceship.json */,
 				385D00FA22AD44A800319703 /* lottie.stencil */,
 			);
 			path = Lottie;
@@ -163,27 +210,72 @@
 		385D00FB22AD44A800319703 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
-				385D00FC22AD44A800319703 /* soloisthalf.ttf */,
-				385D00FD22AD44A800319703 /* soloistital1.ttf */,
-				385D00FE22AD44A800319703 /* soloist1.ttf */,
-				385D00FF22AD44A800319703 /* soloiststraight1.ttf */,
-				385D010022AD44A800319703 /* soloistlaser1.ttf */,
-				385D010122AD44A800319703 /* soloistexpand1.ttf */,
-				385D010222AD44A800319703 /* soloisthalf1.ttf */,
-				385D010322AD44A800319703 /* soloist.txt */,
-				385D010422AD44A800319703 /* soloistleft1.ttf */,
-				385D010522AD44A800319703 /* soloistgrad1.ttf */,
-				385D010622AD44A800319703 /* soloist3d.ttf */,
-				385D010722AD44A800319703 /* soloistchrome.ttf */,
-				385D010822AD44A800319703 /* soloistextraital1.ttf */,
-				385D010922AD44A800319703 /* soloisttitle1.ttf */,
-				385D010A22AD44A800319703 /* soloistacad.ttf */,
-				385D010B22AD44A800319703 /* soloisthalf21.ttf */,
-				385D010C22AD44A800319703 /* soloistout.ttf */,
-				385D010D22AD44A800319703 /* soloistlaserital1.ttf */,
-				385D010E22AD44A800319703 /* soloistcond1.ttf */,
+				385D014122AD5E0100319703 /* SFDistantGalaxy-Italic.ttf */,
+				385D014022AD5E0100319703 /* SFDistantGalaxy.ttf */,
+				385D013D22AD5E0100319703 /* SFDistantGalaxyAlternate-It.ttf */,
+				385D013C22AD5E0000319703 /* SFDistantGalaxyAlternate.ttf */,
+				385D014322AD5E0100319703 /* SFDistantGalaxyAltOutline-I.ttf */,
+				385D014422AD5E0100319703 /* SFDistantGalaxyAltOutline.ttf */,
+				385D013B22AD5E0000319703 /* SFDistantGalaxyOutline-Ital.ttf */,
+				385D013E22AD5E0100319703 /* SFDistantGalaxyOutline.ttf */,
+				385D014222AD5E0100319703 /* SFDistantGalaxySymbols-Ital.ttf */,
+				385D013F22AD5E0100319703 /* SFDistantGalaxySymbols.ttf */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		385D012D22AD51C200319703 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				385D012B22AD519E00319703 /* WelcomeViewController.swift */,
+				385D00DB22AD43CC00319703 /* Welcome.storyboard */,
+				385D013522AD568400319703 /* ItemList.storyboard */,
+				385D00D722AD43CC00319703 /* ItemListViewController.swift */,
+				385D00D922AD43CC00319703 /* DetailViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		385D013A22AD5B9700319703 /* Generated */ = {
+			isa = PBXGroup;
+			children = (
+				38A926D022B46A7D0043713F /* ItemStore+Planets.swift */,
+				38A926CD22B466570043713F /* ItemStore+People.swift */,
+				38A926CC22B466570043713F /* ItemStore+Ships.swift */,
+				38A926D222B46ED00043713F /* ItemStore+Films.swift */,
+			);
+			path = Generated;
+			sourceTree = "<group>";
+		};
+		385D015122AD686800319703 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				38FB4F5522B585DC00C0FC7A /* Model.swift */,
+				38FB4F5722B585FC00C0FC7A /* ItemStore */,
+				385D014F22AD5F8000319703 /* Ship.swift */,
+				3842FAD122B3EECF006CDE8F /* Person.swift */,
+				3842FAD322B3EF2A006CDE8F /* Planet.swift */,
+				3842FAD522B3EF5A006CDE8F /* Film.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		38FB4F5722B585FC00C0FC7A /* ItemStore */ = {
+			isa = PBXGroup;
+			children = (
+				3842FAD722B3F6B2006CDE8F /* Item.swift */,
+				385D015422AD79AD00319703 /* ItemFields.swift */,
+				385D015222AD687F00319703 /* ItemStore.swift */,
+			);
+			path = ItemStore;
+			sourceTree = "<group>";
+		};
+		7CCAAA0E5DF1A019222FD827 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				71538ACEC10E0E4797366E66 /* Pods_CodeGenDemo.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -193,9 +285,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 385D00F122AD43CD00319703 /* Build configuration list for PBXNativeTarget "CodeGenDemo" */;
 			buildPhases = (
+				33E17F5B166A1E2CA05C9BD1 /* [CP] Check Pods Manifest.lock */,
 				385D00CE22AD43CC00319703 /* Sources */,
 				385D00CF22AD43CC00319703 /* Frameworks */,
 				385D00D022AD43CC00319703 /* Resources */,
+				011782091942144D75F8D151 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -268,28 +362,24 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				385D012222AD44A800319703 /* soloistlaserital1.ttf in Resources */,
-				385D011F22AD44A800319703 /* soloistacad.ttf in Resources */,
-				385D011A22AD44A800319703 /* soloistgrad1.ttf in Resources */,
-				385D011B22AD44A800319703 /* soloist3d.ttf in Resources */,
+				385D014722AD5E0100319703 /* SFDistantGalaxyAlternate-It.ttf in Resources */,
+				385D014D22AD5E0100319703 /* SFDistantGalaxyAltOutline-I.ttf in Resources */,
+				38FB4F4D22B56FBF00C0FC7A /* bb8.json in Resources */,
+				385D014C22AD5E0100319703 /* SFDistantGalaxySymbols-Ital.ttf in Resources */,
+				385D014622AD5E0100319703 /* SFDistantGalaxyAlternate.ttf in Resources */,
+				38FB4F4E22B56FBF00C0FC7A /* lightsaber.json in Resources */,
 				385D00E222AD43CC00319703 /* LaunchScreen.storyboard in Resources */,
-				385D011522AD44A800319703 /* soloistlaser1.ttf in Resources */,
-				385D011E22AD44A800319703 /* soloisttitle1.ttf in Resources */,
-				385D012322AD44A800319703 /* soloistcond1.ttf in Resources */,
+				385D014E22AD5E0100319703 /* SFDistantGalaxyAltOutline.ttf in Resources */,
+				385D013622AD568500319703 /* ItemList.storyboard in Resources */,
 				385D010F22AD44A800319703 /* Assets.xcassets in Resources */,
-				385D012022AD44A800319703 /* soloisthalf21.ttf in Resources */,
-				385D011722AD44A800319703 /* soloisthalf1.ttf in Resources */,
-				385D011222AD44A800319703 /* soloistital1.ttf in Resources */,
-				385D011C22AD44A800319703 /* soloistchrome.ttf in Resources */,
 				385D012622AD45CC00319703 /* Localizable.strings in Resources */,
-				385D012122AD44A800319703 /* soloistout.ttf in Resources */,
-				385D011622AD44A800319703 /* soloistexpand1.ttf in Resources */,
-				385D00DD22AD43CC00319703 /* Main.storyboard in Resources */,
-				385D011D22AD44A800319703 /* soloistextraital1.ttf in Resources */,
-				385D011422AD44A800319703 /* soloiststraight1.ttf in Resources */,
-				385D011922AD44A800319703 /* soloistleft1.ttf in Resources */,
-				385D011322AD44A800319703 /* soloist1.ttf in Resources */,
-				385D011122AD44A800319703 /* soloisthalf.ttf in Resources */,
+				385D014B22AD5E0100319703 /* SFDistantGalaxy-Italic.ttf in Resources */,
+				385D014822AD5E0100319703 /* SFDistantGalaxyOutline.ttf in Resources */,
+				385D014A22AD5E0100319703 /* SFDistantGalaxy.ttf in Resources */,
+				385D014522AD5E0100319703 /* SFDistantGalaxyOutline-Ital.ttf in Resources */,
+				385D00DD22AD43CC00319703 /* Welcome.storyboard in Resources */,
+				385D013122AD555F00319703 /* spaceship.json in Resources */,
+				385D014922AD5E0100319703 /* SFDistantGalaxySymbols.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,14 +392,74 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		011782091942144D75F8D151 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CodeGenDemo/Pods-CodeGenDemo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/lottie-ios/Lottie.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Lottie.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CodeGenDemo/Pods-CodeGenDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		33E17F5B166A1E2CA05C9BD1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CodeGenDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		385D00CE22AD43CC00319703 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				385D00DA22AD43CC00319703 /* DetailViewController.swift in Sources */,
-				385D00D822AD43CC00319703 /* MasterViewController.swift in Sources */,
+				385D015022AD5F8000319703 /* Ship.swift in Sources */,
+				385D012C22AD519E00319703 /* WelcomeViewController.swift in Sources */,
+				385D015522AD79AD00319703 /* ItemFields.swift in Sources */,
+				3842FAD822B3F6B2006CDE8F /* Item.swift in Sources */,
+				385D00D822AD43CC00319703 /* ItemListViewController.swift in Sources */,
+				38A926D122B46A7D0043713F /* ItemStore+Planets.swift in Sources */,
+				38FB4F5622B585DC00C0FC7A /* Model.swift in Sources */,
+				38A926CE22B466570043713F /* ItemStore+Ships.swift in Sources */,
+				38A926D322B46ED00043713F /* ItemStore+Films.swift in Sources */,
 				385D00D622AD43CC00319703 /* AppDelegate.swift in Sources */,
+				3842FAD222B3EECF006CDE8F /* Person.swift in Sources */,
+				385D015322AD687F00319703 /* ItemStore.swift in Sources */,
+				38A926CF22B466570043713F /* ItemStore+People.swift in Sources */,
+				3842FAD622B3EF5A006CDE8F /* Film.swift in Sources */,
+				3842FAD422B3EF2A006CDE8F /* Planet.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -317,7 +467,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				38A926D822B473850043713F /* ItemStore+Ships.swift in Sources */,
+				38A926DA22B473850043713F /* Ship.swift in Sources */,
+				38A926D622B473850043713F /* ItemStore+Planets.swift in Sources */,
+				38FB4F5822B5A51800C0FC7A /* Model.swift in Sources */,
+				38A926D422B473850043713F /* Item.swift in Sources */,
+				38A926D722B473850043713F /* ItemStore+People.swift in Sources */,
+				38A926D922B473850043713F /* ItemStore+Films.swift in Sources */,
+				38A926DD22B473850043713F /* Film.swift in Sources */,
+				38A926DB22B473850043713F /* Person.swift in Sources */,
 				385D00ED22AD43CD00319703 /* CodeGenDemoTests.swift in Sources */,
+				38A926D522B473850043713F /* ItemStore.swift in Sources */,
+				38A926DC22B473850043713F /* Planet.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -332,12 +493,12 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		385D00DB22AD43CC00319703 /* Main.storyboard */ = {
+		385D00DB22AD43CC00319703 /* Welcome.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				385D00DC22AD43CC00319703 /* Base */,
 			);
-			name = Main.storyboard;
+			name = Welcome.storyboard;
 			sourceTree = "<group>";
 		};
 		385D00E022AD43CC00319703 /* LaunchScreen.storyboard */ = {
@@ -481,11 +642,12 @@
 		};
 		385D00F222AD43CD00319703 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F45CA2F4BD576BC84B855358 /* Pods-CodeGenDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
-				INFOPLIST_FILE = CodeGenDemo/Info.plist;
+				INFOPLIST_FILE = CodeGenDemo/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -500,11 +662,12 @@
 		};
 		385D00F322AD43CD00319703 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C4867AC91C023DA03AC186AF /* Pods-CodeGenDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
-				INFOPLIST_FILE = CodeGenDemo/Info.plist;
+				INFOPLIST_FILE = CodeGenDemo/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

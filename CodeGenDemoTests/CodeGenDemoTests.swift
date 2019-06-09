@@ -2,7 +2,6 @@
 //  CodeGenDemoTests.swift
 //  CodeGenDemoTests
 //
-//  Created by Olivier Halligon on 09/06/2019.
 //  Copyright © 2019 Olivier Halligon. All rights reserved.
 //
 
@@ -19,16 +18,10 @@ class CodeGenDemoTests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func testSubscript() {
+        let film = ItemStore.shared[ID<Film>(id: 1)]
+        XCTAssertNotNil(film)
+        XCTAssertEqual(film?.title, "A New Hope")
+        XCTAssertEqual(film?.characters.first?.displayName, "Luke Skywalker")
     }
-
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
-    }
-
 }
