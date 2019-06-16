@@ -1,5 +1,22 @@
 # Workshop steps
 
+> Prep TODOs
+> 
+>  - Add a Localizable.stringdict and mention the need for having the key in .strings anyway
+>  - Squash the existing commits then undo the steps for Step 0, re-spreading them in separate commits
+>    - remove some fonts from Info.plist to demonstrate case when we forgot
+>    - Remove lots of data from the ItemStore (to make it as if typed by hand)
+>    - Introduce some more intentional bugs (wrong image name, wrong string key)
+>    - remove tools from Pods [extract in separate commit]
+>    - Remove Lottie.stencil [extract in separate commit]
+>  - Review the code, ensure it's organized correctly (folders, etc), and no FIXME missing
+>  - Review the Stages and Steps listed below before starting, and compare with the FIXMEs. Add Stage number in FIXME messages
+>  - Play the steps below and create the individual commits
+> 
+> - Update `README.md` with this content
+> - Slides for presentation talk
+> 
+
 ## Exercices
 
 ### Stage 0: Discover the project
