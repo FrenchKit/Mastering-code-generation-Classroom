@@ -5,7 +5,7 @@
   Copyright © 2019 Olivier Halligon. All rights reserved.
 */
 
-"welcome" = "Bem-vindo(a) a %@";
+"welcome" = "Bem-vindoa a %@";
 "list.title" = "Catálogo StarWars";
 "detail.title" = "Detalhes do item";
 
@@ -51,7 +51,7 @@
 "planet.climate" = "Clima";
 "planet.gravity" = "Gravidade";
 "planet.terrain" = "Terreno";
-"planet.surfaceWater" = "% de água na superfície";
+"planet.surfaceWater" = "% de água na superfície"; // beware %% when migrating to SwiftGen
 "planet.population" = "População";
 "planet.residents" = "Residentes";
 "planet.films" = "Filmes";

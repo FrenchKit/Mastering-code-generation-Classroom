@@ -14,7 +14,6 @@
 		385D00D622AD43CC00319703 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385D00D522AD43CC00319703 /* AppDelegate.swift */; };
 		385D00D822AD43CC00319703 /* ItemListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385D00D722AD43CC00319703 /* ItemListViewController.swift */; };
 		385D00DA22AD43CC00319703 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385D00D922AD43CC00319703 /* DetailViewController.swift */; };
-		385D00DD22AD43CC00319703 /* Welcome.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 385D00DB22AD43CC00319703 /* Welcome.storyboard */; };
 		385D00E222AD43CC00319703 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 385D00E022AD43CC00319703 /* LaunchScreen.storyboard */; };
 		385D00ED22AD43CD00319703 /* CodeGenDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385D00EC22AD43CD00319703 /* CodeGenDemoTests.swift */; };
 		385D010F22AD44A800319703 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 385D00F822AD44A800319703 /* Assets.xcassets */; };
@@ -34,7 +33,7 @@
 		385D014E22AD5E0100319703 /* SFDistantGalaxyAltOutline.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 385D014422AD5E0100319703 /* SFDistantGalaxyAltOutline.ttf */; };
 		385D015022AD5F8000319703 /* Ship.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385D014F22AD5F8000319703 /* Ship.swift */; };
 		385D015322AD687F00319703 /* ItemStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385D015222AD687F00319703 /* ItemStore.swift */; };
-		385D015522AD79AD00319703 /* ItemFields.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385D015422AD79AD00319703 /* ItemFields.swift */; };
+		385D015522AD79AD00319703 /* Item+Fields.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385D015422AD79AD00319703 /* Item+Fields.swift */; };
 		38A926CE22B466570043713F /* ItemStore+Ships.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A926CC22B466570043713F /* ItemStore+Ships.swift */; };
 		38A926CF22B466570043713F /* ItemStore+People.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A926CD22B466570043713F /* ItemStore+People.swift */; };
 		38A926D122B46A7D0043713F /* ItemStore+Planets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A926D022B46A7D0043713F /* ItemStore+Planets.swift */; };
@@ -53,6 +52,7 @@
 		38FB4F4E22B56FBF00C0FC7A /* lightsaber.json in Resources */ = {isa = PBXBuildFile; fileRef = 38FB4F4C22B56FBF00C0FC7A /* lightsaber.json */; };
 		38FB4F5622B585DC00C0FC7A /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38FB4F5522B585DC00C0FC7A /* Model.swift */; };
 		38FB4F5822B5A51800C0FC7A /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38FB4F5522B585DC00C0FC7A /* Model.swift */; };
+		38FB4F5A22B5D11D00C0FC7A /* Welcome.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38FB4F5922B5D11D00C0FC7A /* Welcome.storyboard */; };
 		A8D8CB98664C6F48020D0EC9 /* Pods_CodeGenDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71538ACEC10E0E4797366E66 /* Pods_CodeGenDemo.framework */; };
 /* End PBXBuildFile section */
 
@@ -75,7 +75,6 @@
 		385D00D522AD43CC00319703 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		385D00D722AD43CC00319703 /* ItemListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemListViewController.swift; sourceTree = "<group>"; };
 		385D00D922AD43CC00319703 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
-		385D00DC22AD43CC00319703 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Welcome.storyboard; sourceTree = "<group>"; };
 		385D00E122AD43CC00319703 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		385D00E322AD43CC00319703 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		385D00E822AD43CD00319703 /* CodeGenDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CodeGenDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -101,7 +100,7 @@
 		385D014422AD5E0100319703 /* SFDistantGalaxyAltOutline.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SFDistantGalaxyAltOutline.ttf; sourceTree = "<group>"; };
 		385D014F22AD5F8000319703 /* Ship.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ship.swift; sourceTree = "<group>"; };
 		385D015222AD687F00319703 /* ItemStore.swift */ = {isa = PBXFileReference; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = ItemStore.swift; sourceTree = "<group>"; tabWidth = 2; };
-		385D015422AD79AD00319703 /* ItemFields.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemFields.swift; sourceTree = "<group>"; };
+		385D015422AD79AD00319703 /* Item+Fields.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Item+Fields.swift"; sourceTree = "<group>"; };
 		38A926CC22B466570043713F /* ItemStore+Ships.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ItemStore+Ships.swift"; sourceTree = "<group>"; };
 		38A926CD22B466570043713F /* ItemStore+People.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ItemStore+People.swift"; sourceTree = "<group>"; };
 		38A926D022B46A7D0043713F /* ItemStore+Planets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ItemStore+Planets.swift"; sourceTree = "<group>"; };
@@ -109,6 +108,7 @@
 		38FB4F4B22B56FBF00C0FC7A /* bb8.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = bb8.json; sourceTree = "<group>"; };
 		38FB4F4C22B56FBF00C0FC7A /* lightsaber.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = lightsaber.json; sourceTree = "<group>"; };
 		38FB4F5522B585DC00C0FC7A /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		38FB4F5922B5D11D00C0FC7A /* Welcome.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Welcome.storyboard; sourceTree = "<group>"; };
 		71538ACEC10E0E4797366E66 /* Pods_CodeGenDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CodeGenDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4867AC91C023DA03AC186AF /* Pods-CodeGenDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CodeGenDemo.release.xcconfig"; path = "Target Support Files/Pods-CodeGenDemo/Pods-CodeGenDemo.release.xcconfig"; sourceTree = "<group>"; };
 		F45CA2F4BD576BC84B855358 /* Pods-CodeGenDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CodeGenDemo.debug.xcconfig"; path = "Target Support Files/Pods-CodeGenDemo/Pods-CodeGenDemo.debug.xcconfig"; sourceTree = "<group>"; };
@@ -227,8 +227,8 @@
 		385D012D22AD51C200319703 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				38FB4F5922B5D11D00C0FC7A /* Welcome.storyboard */,
 				385D012B22AD519E00319703 /* WelcomeViewController.swift */,
-				385D00DB22AD43CC00319703 /* Welcome.storyboard */,
 				385D013522AD568400319703 /* ItemList.storyboard */,
 				385D00D722AD43CC00319703 /* ItemListViewController.swift */,
 				385D00D922AD43CC00319703 /* DetailViewController.swift */,
@@ -264,7 +264,7 @@
 			isa = PBXGroup;
 			children = (
 				3842FAD722B3F6B2006CDE8F /* Item.swift */,
-				385D015422AD79AD00319703 /* ItemFields.swift */,
+				385D015422AD79AD00319703 /* Item+Fields.swift */,
 				385D015222AD687F00319703 /* ItemStore.swift */,
 			);
 			path = ItemStore;
@@ -367,6 +367,7 @@
 				38FB4F4D22B56FBF00C0FC7A /* bb8.json in Resources */,
 				385D014C22AD5E0100319703 /* SFDistantGalaxySymbols-Ital.ttf in Resources */,
 				385D014622AD5E0100319703 /* SFDistantGalaxyAlternate.ttf in Resources */,
+				38FB4F5A22B5D11D00C0FC7A /* Welcome.storyboard in Resources */,
 				38FB4F4E22B56FBF00C0FC7A /* lightsaber.json in Resources */,
 				385D00E222AD43CC00319703 /* LaunchScreen.storyboard in Resources */,
 				385D014E22AD5E0100319703 /* SFDistantGalaxyAltOutline.ttf in Resources */,
@@ -377,7 +378,6 @@
 				385D014822AD5E0100319703 /* SFDistantGalaxyOutline.ttf in Resources */,
 				385D014A22AD5E0100319703 /* SFDistantGalaxy.ttf in Resources */,
 				385D014522AD5E0100319703 /* SFDistantGalaxyOutline-Ital.ttf in Resources */,
-				385D00DD22AD43CC00319703 /* Welcome.storyboard in Resources */,
 				385D013122AD555F00319703 /* spaceship.json in Resources */,
 				385D014922AD5E0100319703 /* SFDistantGalaxySymbols.ttf in Resources */,
 			);
@@ -447,7 +447,7 @@
 				385D00DA22AD43CC00319703 /* DetailViewController.swift in Sources */,
 				385D015022AD5F8000319703 /* Ship.swift in Sources */,
 				385D012C22AD519E00319703 /* WelcomeViewController.swift in Sources */,
-				385D015522AD79AD00319703 /* ItemFields.swift in Sources */,
+				385D015522AD79AD00319703 /* Item+Fields.swift in Sources */,
 				3842FAD822B3F6B2006CDE8F /* Item.swift in Sources */,
 				385D00D822AD43CC00319703 /* ItemListViewController.swift in Sources */,
 				38A926D122B46A7D0043713F /* ItemStore+Planets.swift in Sources */,
@@ -493,14 +493,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		385D00DB22AD43CC00319703 /* Welcome.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				385D00DC22AD43CC00319703 /* Base */,
-			);
-			name = Welcome.storyboard;
-			sourceTree = "<group>";
-		};
 		385D00E022AD43CC00319703 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

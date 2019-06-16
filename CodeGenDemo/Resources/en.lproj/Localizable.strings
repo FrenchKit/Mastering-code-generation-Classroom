@@ -51,7 +51,7 @@
 "planet.climate" = "Climate";
 "planet.gravity" = "Gravity";
 "planet.terrain" = "Terrain";
-"planet.surfaceWater" = "Surface Water (%)";
+"planet.surfaceWater" = "Surface Water (%)"; // beware %% when migrating to SwiftGen
 "planet.population" = "Population";
 "planet.residents" = "Residents";
 "planet.films" = "Films";

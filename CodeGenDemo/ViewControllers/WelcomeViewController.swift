@@ -38,7 +38,7 @@ class WelcomeViewController: UIViewController {
 
         guard let animationName = possibleAnimations.randomElement() else { return }
         let animationView = AnimationView(name: animationName)
-        embed(animationView, in: animationContainer)
+        animationView.embed(in: animationContainer)
         
         animationView.play { [weak self] finished in
             self?.presentingViewController?.dismiss(animated: true, completion: nil)
@@ -48,15 +48,18 @@ class WelcomeViewController: UIViewController {
     @IBAction func didTap(_ sender: UITapGestureRecognizer) {
         self.presentingViewController?.dismiss(animated: true, completion: nil)
     }
+}
 
-    private func embed(_ view: UIView, in container: UIView) {
-        container.addSubview(view)
-        view.translatesAutoresizingMaskIntoConstraints = false
+
+extension UIView {
+    func embed(in container: UIView) {
+        container.addSubview(self)
+        self.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
-            view.topAnchor.constraint(equalTo: container.topAnchor),
-            view.leftAnchor.constraint(equalTo: container.leftAnchor),
-            view.rightAnchor.constraint(equalTo: container.rightAnchor),
-            view.bottomAnchor.constraint(equalTo: container.bottomAnchor)
+            self.topAnchor.constraint(equalTo: container.topAnchor),
+            self.leftAnchor.constraint(equalTo: container.leftAnchor),
+            self.rightAnchor.constraint(equalTo: container.rightAnchor),
+            self.bottomAnchor.constraint(equalTo: container.bottomAnchor)
         ])
     }
 }

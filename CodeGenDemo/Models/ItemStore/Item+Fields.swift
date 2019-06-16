@@ -32,6 +32,7 @@ extension Item {
         case .planet(let planet):
             return [
                 "planet.name": planet.name,
+                "planet.surfaceWater": string(planet.surfaceWater)
             ]
         case .film(let film):
             return [

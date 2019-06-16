@@ -27,7 +27,8 @@ class DetailViewController: UIViewController {
 
         // swiftgen fonts
         // as you can see at runtime, the font file name doesn't seem to be the right thing to use, but SwiftGen will help us fix that.
-        descriptionTextView.font = UIFont(name: "SFDistantGalaxyAlternate-It", size: 14)
+        descriptionTextView.font = UIFont(name: "SFDistantGalaxyAlternate-Italic", size: 14)
+        
         update()
     }
 
@@ -68,8 +69,7 @@ extension DetailViewController: UITableViewDataSource {
         let label = NSLocalizedString(field.key, comment: "")
         let value = field.value
 
-        // Static content, we wont' bother recycling cells for the demo
-        let cell = UITableViewCell(style: .value2, reuseIdentifier: "FieldCell")
+        let cell = tableView.dequeueReusableCell(withIdentifier: "FieldCell", for: indexPath)
 
         cell.textLabel?.text = label
         // FIXME: swiftgen assets
